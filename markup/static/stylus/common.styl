@@ -1,0 +1,55 @@
+// Common styles of the project
+html
+	box-sizing border-box
+*, *:before, *:after
+	box-sizing inherit
+body
+	position relative
+	font-family $font
+img
+	max-width 100%
+	height auto
+	box-sizing content-box
+a
+	text-decoration none
+ul
+	list-style none
+ul,li,p,h1,h2,h3
+	margin 0
+	padding 0
+.page__inner
+	display: flex
+	min-height 100vh
+	flex-direction column
+.page-content
+	flex 1
+.center
+	outline 1px solid
+	wrapper()
+.show
+	display block
+.hide
+	display none
+.btn
+	display inline-block
+	vertical-align top
+	border none
+	color $c_white
+	font-size 14px
+	font-weight 500
+	line-height 21px
+	text-transform uppercase
+	font-size 14px
+	font-weight 300
+	line-height 21px
+	background-color $c_blue
+	border-radius 5px
+	box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
+.overlay
+	display none
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background-color rgba(0,0,0,.5)
