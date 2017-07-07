@@ -1,10 +1,10 @@
 mixin solutions(data)
 	+b.SECTION.solutions
-		+e.inner
+		+e.inner.center
 			+e.H2.title.heading._h2 Отраслевые решения
 			+e.UL.list
 				- var elements = data.elements
 				- for(var i = 0; i < elements.length; i++)
 					+e.LI.item
-						+svg(elements[i].imgName,86,46)
+						+svg(elements[i].imgName,90,50)
 						span #{elements[i].title}
