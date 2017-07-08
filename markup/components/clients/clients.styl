@@ -1,1 +1,45 @@
-
+.clients
+	&__item
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		text-align center
+		width 240px
+		font-size 14px
+		line-height 21px
+		margin 0 20px
+		padding 30px 30px 60px
+		border-radius 5px
+		box-shadow 0 4px 18px rgba(0, 0, 0, 0.19)
+		b
+			display block
+			margin-bottom 30px
+			padding-top 30px
+			color $c_dark-blue
+			font-weight 500
+		p
+			color $c_text
+			font-weight 300
+.filter
+	display -webkit-flex
+	display -ms-flex
+	display flex
+	flex-wrap wrap
+	&__item
+		margin-right 30px
+		margin-bottom 30px
+		padding 8px 30px
+		color $c_text
+		font-size 14px
+		font-weight 300
+		line-height 21px
+		background-color #fafafa
+		border-radius 15px
+		&:hover
+			cursor pointer
+			box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
+		&.active
+			background-color $c_white
+			box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
+			
