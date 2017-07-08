@@ -1,2 +1,8 @@
 mixin contact-form(data)
-    .contact-form
+	+b.FORM.contact-form(action="/echo" method="post")
+		+e.inner.center
+			+e.H2.title.heading_h2 Написать письмо
+			input
+			
+
+

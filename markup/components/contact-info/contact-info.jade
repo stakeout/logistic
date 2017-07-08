@@ -1,4 +1,17 @@
 mixin contact-info(data)
 	+b.contact-info
-		+e.phone Телефон/факс
-			span +375(17)18 33 26
+		+e.items 
+			+svg('phone',15,15)
+			span Телефон/факс:
+			a(href='tel:+37517183326') +375(17)18 33 26
+		+e.items 
+			+svg('mail',15,15)
+			span Электронная почта:
+			a(href='mailto:info@tvlogistic.by') info@tvlogistic.by
+		+e.items 
+			+svg('pin_blue',15,15)
+			span Адрес:
+			p Республика Беларусь
+				<br> 220007, г.Мин6ск
+				<br> ул. Фабрициуса, 85
+				<br> корп. 1, пом. 2, каб. 42
