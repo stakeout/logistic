@@ -2,7 +2,27 @@ mixin contact-form(data)
 	+b.FORM.contact-form(action="/echo" method="post")
 		+e.inner.center
 			+e.H2.title.heading_h2 Написать письмо
-			input
-			
+			input(placeholder="Тема письма")
+			+e.col-left
+				label
+					+svg('name',20,20)
+					input(placeholder="Ваше имя")
+				label
+					+svg('company',20,20)
+					input(placeholder="Компания")
+				label
+					+svg('phone',20,20)
+					input(placeholder="Телефон")
+				label
+					+svg('mail',20,20)
+					input(placeholder="Электронная почта")
+			+e.col-right
+				label
+					+svg('mail',20,20)
+					textarea(placeholder="Сообщение" rows="1")
+			span Данные не передаются третьим лицам
+				+svg('protect',20,27)
+			+e.BUTTON.send-btn.btn(type="submit") Отправить
+
 
 
