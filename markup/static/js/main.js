@@ -1,4 +1,6 @@
-import '../../components/slick/slick.min';
+// import '../../components/slick/slick.min';
+const slick = require('slick-carousel');
+import {filterByType} from '../../components/clients/clients';
 $(() => {
     $('.clients__list').slick({
         dots: true,
@@ -6,4 +8,5 @@ $(() => {
         slidesToScroll: 1,
         focusOnSelect: true
     });
+    filterByType();
 });
