@@ -1,0 +1,52 @@
+.direction
+	background-image url(%=static=%general/bg_direction.png)
+	background-repeat no-repeat
+	// background-position 100% center
+	background-size cover
+	&__inner
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		padding-top 60px
+		padding-bottom 60px
+		min-height 100vh
+	&__title
+		margin-top 140px
+		margin-bottom 30px
+		color $c_white
+		font-size 24px
+		font-weight 500
+		line-height 24px
+		text-transform uppercase
+	&__text 
+		width 516px
+		margin-bottom 90px
+		color $c_white
+		font-size 14px
+		font-weight 300
+		line-height 24px
+	&__list
+		display flex
+	&__item
+		margin-right 60px
+		padding 60px 30px
+		text-align center
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+		&:nth-child(4n)
+			margin-right 0
+		&:hover
+			background-color $c_light-blue
+		span 
+			color: #2196f3;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 24px;
+		p 
+			margin-top 30px
+			color: $c_text;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 21px;
