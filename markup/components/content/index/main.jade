@@ -3,9 +3,11 @@ include ../../services/services
 include ../../solutions/solutions
 include ../../about-us/about-us
 include ../../clients/clients
+include ../../request-form/request-form
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
+			+request-form
 			+promo
 			+services
 			+solutions(solutions)

@@ -5,7 +5,6 @@ head
 	meta(content="telephone=no", name="format-detection")
 	//- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers
 	meta(name="HandheldFriendly", content="true")
-	|<!--[if (gt IE 10)|!(IE)]><!--><link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
 
 	//- if data.useSocialMetaTags
 	//- 	meta(property="og:title", content="Такси Шереметьево")
@@ -24,4 +23,4 @@ head
 	title= pageTitle || ''
 	meta(name='description' content=pageDescription || '')
 	meta(name='keywords' content=pageKeywords || '')
-	//- link(href='assets/styles/app.min.css?t=' + timestamp rel='stylesheet')
+	|<!--[if (gt IE 10)|!(IE)]><!--><link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->

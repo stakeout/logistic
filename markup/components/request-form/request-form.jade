@@ -1,0 +1,29 @@
+mixin request-form(data)
+	+b.request-form
+		+e.FORM.form(action='#' method='post')
+			+e.inner
+				+e.left-col
+					+e.top-row
+						input(type='text' id='name' name='name' placeholder='Ваше имя')
+						input(type='text' id='company' name='company' placeholder='Компания')
+					+e.bottom-row
+						span Выберите вид транспорта
+						p
+							input(type='checkbox' name='auto' id='auto')
+							label(for='auto')
+						p
+							input(type='checkbox' name='train' id='train')
+							label(for='train')
+						p
+							input(type='checkbox' name='plane' id='plane')
+							label(for='plane')
+						p
+							input(type='checkbox' name='ship' id='ship')
+							label(for='ship')
+				+e.right-col
+					+e.top-row
+						input(type='tel' name='phone' id='phone' placeholder='Телефон')
+						input(type='email' name='email' id='email' placeholder='Электронаня почта')
+						input(type='tel' name='phone' id='phone' placeholder='Телефон')
+						input(type='tel' name='phone' id='phone' placeholder='Телефон')
+					+e.bottom-row
