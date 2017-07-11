@@ -1,4 +1,6 @@
 .about-us
+	&_page &__top-row
+			min-height 100vh
 	&__top-row
 		height 900px
 		background-image url(__static__content/people_company.png)
@@ -16,6 +18,8 @@
 	&__list
 		row-flex()
 		flex-basis 100%
+	&_page &__list
+		margin-top auto
 	&__item
 		col()
 		size(3)
@@ -30,11 +34,15 @@
 			font-size 48px
 		span
 			font-size 14px
+	&_page &__item
+		color $c_white
 	&__link
 		margin-top auto
 		margin-left auto
 		padding 22px 50px
 		font-weight 500
+	&_page &__link
+		display none
 	&__bottom-row
 		p
 			margin-bottom 20px
