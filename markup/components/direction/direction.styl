@@ -27,25 +27,31 @@
 		font-weight 300
 		line-height 24px
 	&__list
-		display flex
+		row-flex()
+		justify-content: space-between;
 	&__item
-		margin-right 60px
+		col()
+		size(3)
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		flex-basis 240px
+		min-height 310px
 		padding 60px 30px
 		text-align center
 		background-color: white;
 		border-radius: 5px;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
-		&:nth-child(4n)
-			margin-right 0
 		&:hover
 			background-color $c_light-blue
 		span 
 			color: #2196f3;
 			font-size: 24px;
-			font-weight: 500;
+			font-weight: 300;
 			line-height: 24px;
 		p 
-			margin-top 30px
+			margin-top auto
 			color: $c_text;
 			font-size: 14px;
 			font-weight: 300;
