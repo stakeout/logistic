@@ -3,27 +3,83 @@ mixin request-form(data)
 		+e.FORM.form(action='#' method='post')
 			+e.inner
 				+e.left-col
-					+e.top-row
-						input(type='text' id='name' name='name' placeholder='Ваше имя')
-						input(type='text' id='company' name='company' placeholder='Компания')
-					+e.bottom-row
+					.top-row
+						p
+							input(type='text' id='name' name='name' placeholder='Ваше имя')
+							+svg('plane',24,24)
+						p
+							input(type='text' id='company' name='company' placeholder='Компания')
+							+svg('plane',24,24)
 						span Выберите вид транспорта
+						input(type='checkbox' name='auto' id='auto')
+						label(for='auto')
+							+svg('plane',24,24)
+						input(type='checkbox' name='train' id='train')
+						label(for='train')
+							+svg('plane',24,24)
+						input(type='checkbox' name='plane' id='plane')
+						label(for='plane')
+							+svg('plane',24,24)
+						input(type='checkbox' name='ship' id='ship')
+						label(for='ship')
+							+svg('plane',24,24)
+					.bottom-row
+						.from
+							+svg('arrow-left',24,24)
+							span Откуда
+						.where
+							span Куда
+							+svg('arrow-left',24,24)
 						p
-							input(type='checkbox' name='auto' id='auto')
-							label(for='auto')
+							input(type='text' id='from-country' name='from-country' placeholder='Из какой страны?')
+							+svg('plane',24,24)
 						p
-							input(type='checkbox' name='train' id='train')
-							label(for='train')
+							input(type='text' id='where-country' name='where-country' placeholder='В какую страну?')
+							+svg('plane',24,24)
 						p
-							input(type='checkbox' name='plane' id='plane')
-							label(for='plane')
+							input(type='text' id='from-town' name='from-town' placeholder='Из какого города?')
+							+svg('plane',24,24)
 						p
-							input(type='checkbox' name='ship' id='ship')
-							label(for='ship')
+							input(type='text' id='where-town' name='where-town' placeholder='В какой город?')
+							+svg('plane',24,24)
+						p
+							input(type='text' id='from-index' name='from-index' placeholder='Индекс')
+							+svg('plane',24,24)
+						p
+							input(type='text' id='where-index' name='where-index' placeholder='Индекс')
+							+svg('plane',24,24)
 				+e.right-col
-					+e.top-row
-						input(type='tel' name='phone' id='phone' placeholder='Телефон')
-						input(type='email' name='email' id='email' placeholder='Электронаня почта')
-						input(type='tel' name='phone' id='phone' placeholder='Телефон')
-						input(type='tel' name='phone' id='phone' placeholder='Телефон')
-					+e.bottom-row
+					.top-row
+						p
+							input(type='tel' name='phone' id='phone' placeholder='Телефон')
+							+svg('plane',24,24)
+						p
+							input(type='email' name='email' id='email' placeholder='Электронаня почта')
+							+svg('plane',24,24)
+						p
+							input(type='text' name='weight' id='weight' placeholder='Вес груза')
+							+svg('plane',24,24)
+						p
+							input(type='text' name='size' id='size' placeholder='Объем груза')
+							+svg('plane',24,24)
+					.bottom-row
+						span Особенности груза
+						input(type='checkbox' name='temperature' id='temperature')
+						label(for='temperature') Температурный режим
+						input(type='checkbox' name='modular-cargo' id='modular-cargo')
+						label(for='modular-cargo') Сборный груз
+						input(type='checkbox' name='adr' id='adr')
+						label(for='adr') АДР
+						input(type='checkbox' name='custom-service' id='custom-service')
+						label(for='custom-service') Таможенные услуги
+						input(type='checkbox' name='warhouse-service' id='warhouse-service')
+						label(for='warhouse-service') Складские услуги
+						input(type='checkbox' name='insurance' id='insurance')
+						label(for='insurance') Страхование
+						+e.TEXTAREA.textarea(name='message' id='message' placeholder='Примечание')
+				+e.bottom-row
+					p
+						+svg('plane',24,24)
+						span Данные не передаются третьим лицам
+					+e.INPUT.submit.btn(type='submit' name='submit' id='submit' value='Отправить')
+				
