@@ -9,6 +9,14 @@ $(() => {
         slidesToScroll: 1,
         focusOnSelect: true
     });
+    $('.office-life__list').slick({
+        dots: true,
+        centerMode: true,
+        centerPadding: '200px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
     filterByType();
     $('.reviews__list').magnificPopup({
         delegate: 'a',

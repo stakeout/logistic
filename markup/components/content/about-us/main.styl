@@ -1,0 +1,67 @@
+.our-mission,
+.our-principles
+	&__list
+		row-flex()
+	&__item
+		col()
+		size(4)
+		b
+			display block
+			margin-bottom 30px
+			color #2196f3
+			font-size 24px
+			font-weight 300
+			line-height 36px
+		p
+			color $c_text
+			font-size 14px
+			font-weight 300
+			line-height 21px
+.our-principles
+	&__item:nth-child(n+4)
+		padding-top 60px
+
+.our-team
+	&__list
+		row-flex()
+	&__item
+		col()
+		size(6)
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		justify-content: space-between;
+		min-height 320px
+		background-color #0d47a1
+		border-radius 5px
+		&:nth-child(-n+2)
+			margin-bottom 30px
+	&__img-wrap
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		align-items: flex-end;
+		flex-basis 46.85%
+	&__info
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		flex-basis 53.15%
+		padding 30px
+		color $c_white
+		font-weight 300
+		line-height 36px
+		b
+			font-size 24px
+		span
+			font-size 14px
+		a
+			padding-left 30px
+			color $c_white
+			font-size 14px
+			font-weight 300
+			line-height 36px
+		p
+			&:first-of-type
+				margin-top auto	
