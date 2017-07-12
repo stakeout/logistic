@@ -10,7 +10,7 @@ $(() => {
         focusOnSelect: true
     });
     $('.office-life__list').slick({
-        dots: true,
+        dots: false,
         centerMode: true,
         centerPadding: '200px',
         slidesToShow: 1,

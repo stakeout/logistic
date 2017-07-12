@@ -65,3 +65,30 @@
 		p
 			&:first-of-type
 				margin-top auto	
+//Сотрудники о компании
+.workers-about-us
+	&__info
+		height 440px
+		background-image url(__static__content/about-us-bottom-bg.png)
+		background-repeat no-repeat
+		background-position center center
+		background-size cover
+		& .center
+			display -webkit-flex
+			display -ms-flex
+			display flex
+			flex-direction column
+			height 100%
+			padding 30px
+		p
+			margin-bottom 30px
+			max-width 535px
+			color $c_white
+			font-size 14px
+			font-weight 300
+			line-height 21px
+			&:last-of-type
+				margin-top auto
+		span
+			line-height 36px
+			font-weight 500
