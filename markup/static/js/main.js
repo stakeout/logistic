@@ -1,5 +1,6 @@
 // import '../../components/slick/slick.min';
 const slick = require('slick-carousel');
+const magnificPopup = require('magnific-popup');
 import {filterByType} from '../../components/clients/clients';
 $(() => {
     $('.clients__list').slick({
@@ -9,4 +10,15 @@ $(() => {
         focusOnSelect: true
     });
     filterByType();
+    $('.reviews__list').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: true,
+        image: {
+            verticalFit: true
+        },
+        gallery: {
+            enabled: true
+        }
+    });
 });
