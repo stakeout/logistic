@@ -2,6 +2,7 @@
 const slick = require('slick-carousel');
 const magnificPopup = require('magnific-popup');
 import {filterByType} from '../../components/clients/clients';
+import {map} from '../../components/map/map';
 $(() => {
     $('.clients__list').slick({
         dots: true,
@@ -18,6 +19,7 @@ $(() => {
         focusOnSelect: true
     });
     filterByType();
+    map();
     $('.reviews__list').magnificPopup({
         delegate: 'a',
         type: 'image',
