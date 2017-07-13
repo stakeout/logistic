@@ -1,0 +1,53 @@
+.about-us
+	&_page &__top-row
+			min-height 100vh
+	&__top-row
+		height 900px
+		background-image url(__static__content/people_company.png)
+		background-repeat no-repeat
+		background-position center center
+		background-size cover
+	&__inner
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-wrap wrap
+		height 100%
+		padding-top 80px
+		padding-bottom 80px
+	&__list
+		row-flex()
+		flex-basis 100%
+	&_page &__list
+		margin-top auto
+	&__item
+		col()
+		size(3)
+		color $c_dark-blue
+		font-weight 500
+		line-height 36px
+		text-transform uppercase
+		text-align center
+		b
+			display block
+			margin-bottom 25px
+			font-size 48px
+		span
+			font-size 14px
+	&_page &__item
+		color $c_white
+	&__link
+		margin-top auto
+		margin-left auto
+		padding 22px 50px
+		font-weight 500
+	&_page &__link
+		display none
+	&__bottom-row
+		p
+			margin-bottom 20px
+			color $c_text
+			font-size 14px
+			font-weight 300
+			line-height 21px
+			
