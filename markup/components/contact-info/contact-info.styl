@@ -1,21 +1,37 @@
 .contact-info
+	position absolute
 	width 280px
 	padding 30px
+	padding-bottom 20px
 	font-size 14px
 	line-height 21px
 	font-weight 300
 	background-color $c_white
 	border-radius 5px 5px 0px 0px
-	span
-		padding-left 30px
-		margin-bottom 15px
-		color $c_text-light-blue
-	a
-		padding-left 45px
-		margin-bottom 30px
-		color $c_text-medium-blue
-	p 
-		display inline-block
-		vertical-align top
-		padding-left 45px
-		color $c_text-medium-blue
+	z-index 5
+	&_right
+		left calc(50% + 245px)
+		bottom 60px
+	&_left
+		left calc(50% - 470px)
+		bottom 0
+	&__items 
+		svg
+			display inline-block
+			vertical-align top
+		span
+			display inline-block
+			vertical-align top
+			padding-left 30px
+			margin-bottom 5px
+			color $c_text-light-blue
+		a
+			display block
+			padding-left 45px
+			margin-bottom 20px
+			color $c_text-medium-blue
+		p 
+			display inline-block
+			vertical-align top
+			padding-left 45px
+			color $c_text-medium-blue
