@@ -1,0 +1,24 @@
+mixin onliine-services(data)
+	+b.onliine-services
+		+e.inner.center
+			+e.H2.title Онлайн-сервисы
+			+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			+e.list
+				+e.A.item(href='#')
+					+svg('services-2',90,60)
+					span Расстояние между городами
+				+e.A.item(href='#')
+					+svg('services-2',90,60)
+					span Движение и позиции судов
+				+e.A.item(href='#')
+					+svg('services-2',90,60)
+					span Расчет загрузки транспортного средства
+				+e.A.item(href='#')
+					+svg('services-2',90,60)
+					span Поиск и отслеживание контенейров
+				+e.A.item(href='#')
+					+svg('services-2',90,60)
+					span Отслеживание воздушных судов
+		+e.modal
+			+e.H2.title._modal Движение и позиции судов
+			+e.modal-content
