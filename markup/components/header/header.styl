@@ -1,16 +1,23 @@
 .page-header
-	position relative
-	// background-color #ccc
+	position fixed
+	width 100%
+	left 0
+	top 0
+	right 0
+	padding-top 60px
+	transition: all 0.4s ease-in-out;
 	z-index 1000
+	&.stick
+		padding-top 10px
+		padding-bottom 10px
+		color $c_text
+		transition: all 0.4s ease-in-out;   
+		background: rgba(255,255,255,1);
+		box-shadow: 3px 0 6px rgba(0, 0, 0, 0.19)
 	&__inner
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-wrap wrap
 		align-items center
-		position fixed
-		width 100%
-		left 0
-		top 0
-		right 0
-		padding-top 60px
+		min-height 55px
