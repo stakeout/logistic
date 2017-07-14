@@ -24,22 +24,23 @@ mixin vacancies(data)
 					span Профессионализм
 					p Сложные и интересные задачи помогут вам стать лучшим в своем деле.
 		+e.modal
-			+e.col-left
-				label
-					+svg('name',20,20)
-					input(placeholder="Ваше имя")
-				label
-					+svg('phone',20,20)
-					input(placeholder="Телефон")
-				label
-					+svg('mail',20,20)
-					input(placeholder="Электронная почта")
-				label
-					input(placeholder="Ссылка на резюме")
-			+e.col-right
-				label
-					+svg('mail',20,20)
-					textarea(placeholder="О себе")
-			span Данные не передаются третьим лицам
-				+svg('protect',20,27)
-			+e.BUTTON.send-btn.btn(type="submit") Отправить
+			form(action="/echo" method="post")
+				+e.col-left
+					label
+						+svg('name',20,20)
+						input(placeholder="Ваше имя")
+					label
+						+svg('phone',20,20)
+						input(placeholder="Телефон")
+					label
+						+svg('mail',20,20)
+						input(placeholder="Электронная почта")
+					label
+						input(placeholder="Ссылка на резюме")
+				+e.col-right
+					label
+						+svg('mail',20,20)
+						textarea(placeholder="О себе")
+				span Данные не передаются третьим лицам
+					+svg('protect',20,27)
+				+e.BUTTON.send-btn.btn(type="submit") Отправить
