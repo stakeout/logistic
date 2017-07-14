@@ -1,0 +1,45 @@
+mixin vacancies(data)
+	+b.vacancies
+		+e.inner.center
+			+e.H2.title Наши вакансии
+			+e.P.text На сегодняшний день компания «ТВ Логистик» является динамично развивающейся компанией по оказанию логистичеких услуг на территории Республики Беларусь и за ее пределами. В связи с этим, мы стремимся постоянно расширять как номенклатуру оказываемых услуг по перевозке различных типов грузов, так и географию их оказания.
+			+e.list
+				+e.A.item(href='#')
+					span Экспедитор по железнодорожным грузоперевозкам
+				+e.A.item(href='#')
+					span Экспедитор по морским грузоперевозкам
+				+e.A.item(href='#')
+					span Бухгалтер
+			+e.list
+				+e.advantages-item
+					+svg('vacanci-icon1',90,90)
+					span Нас любят клиенты
+					p Постоянно работаем над улучшением клиентского сервиса
+				+e.advantages-item
+					+svg('vacanci-icon2',90,90)
+					span Карьерный рост
+					p У нас нет огромного штата, поэтому каждый сотрудник может проявить себя
+				+e.advantages-item
+					+svg('vacanci-icon3',90,90)
+					span Профессионализм
+					p Сложные и интересные задачи помогут вам стать лучшим в своем деле.
+		+e.modal
+			+e.col-left
+				label
+					+svg('name',20,20)
+					input(placeholder="Ваше имя")
+				label
+					+svg('phone',20,20)
+					input(placeholder="Телефон")
+				label
+					+svg('mail',20,20)
+					input(placeholder="Электронная почта")
+				label
+					input(placeholder="Ссылка на резюме")
+			+e.col-right
+				label
+					+svg('mail',20,20)
+					textarea(placeholder="О себе")
+			span Данные не передаются третьим лицам
+				+svg('protect',20,27)
+			+e.BUTTON.send-btn.btn(type="submit") Отправить
