@@ -41,7 +41,8 @@
 		justify-content: space-between;
 	&__phone,
 	&__mail
-		display block
+		margin-bottom 15px
+		padding-left 30px
 		color $c_white
 		font-size 14px
 		font-weight 300
@@ -54,3 +55,11 @@
 		text-align right
 		span
 			opacity .5
+			&:last-of-type
+				opacity 1
+				padding-right 30px
+		p
+			margin-top 15px
+	&__left-col
+		p
+			margin-bottom 15px

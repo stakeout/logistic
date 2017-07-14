@@ -1,15 +1,33 @@
 mixin contact-info(data)
-	if data.modifier
+	if data.modifier === 'right'
 		+b(class='contact-info_#{data.modifier}')
-			+e.items 
-				+svg('phone',15,15)
-				a(href='tel:+37517183326') +375(17)18 33 26
-			+e.items 
-				+svg('mail',15,15)
-				a(href='mailto:info@tvlogistic.by') info@tvlogistic.by
-			+e.items 
-				+svg('pin_blue',15,15)
-				p Республика Беларусь
-					<br> 220007, г.Мин6ск
-					<br> ул. Фабрициуса, 85
-					<br> корп. 1, пом. 2, каб. 42
+			+e.inner
+				+e.item
+					+svg('phone',15,15)
+					a(href='tel:+37517183326') +375(17)18 33 26
+				+e.item
+					+svg('mail',15,15)
+					a(href='mailto:info@tvlogistic.by') info@tvlogistic.by
+				+e.item
+					+svg('pin_blue',15,15)
+					p Республика Беларусь
+						<br> 220007, г.Минск
+						<br> ул. Фабрициуса, 8Б
+						<br> корп. 1, пом. 2, каб. 42
+				+e.A.link.btn(href='contacts.html') написать нам
+	else
+		+b(class='contact-info_#{data.modifier}')
+			+e.inner
+				+e.item
+					+svg('phone',15,15)
+					a(href='tel:+37517183326') +375(17)18 33 26
+				+e.item
+					+svg('mail',15,15)
+					a(href='mailto:info@tvlogistic.by') info@tvlogistic.by
+				+e.item
+					+svg('pin_blue',15,15)
+					p Республика Беларусь
+						<br> 220007, г.Минск
+						<br> ул. Фабрициуса, 8Б
+						<br> корп. 1, пом. 2, каб. 42
+				//- +e.A.link.btn(href='contacts.html') написать нам
