@@ -3,7 +3,9 @@ const slick = require('slick-carousel');
 const magnificPopup = require('magnific-popup');
 import {filterByType} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
+import {stickyNav} from '../../components/header/header';
 $(() => {
+    stickyNav();
     $('.clients__list').slick({
         dots: true,
         slidesToShow: 4,
