@@ -1,9 +1,11 @@
 // import '../../components/slick/slick.min';
 const slick = require('slick-carousel');
 const magnificPopup = require('magnific-popup');
+const jqValidation = require('jquery-validation');
 import {filterByType} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav} from '../../components/header/header';
+import {validation} from '../../components/request-form/request-form';
 $(() => {
     stickyNav();
     $('.clients__list').slick({
@@ -22,6 +24,7 @@ $(() => {
     });
     filterByType();
     map();
+    // validation();
     $('.reviews__list').magnificPopup({
         delegate: 'a',
         type: 'image',

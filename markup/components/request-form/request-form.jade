@@ -5,10 +5,12 @@ mixin request-form(data)
 				+e.left-col
 					.top-row
 						p
-							input(type='text' id='name' name='name' placeholder='Ваше имя')
-							+svg('name',20,20)
+							label(for=name)
+								input(type='text' id='name' name='name' pattern="[а-яА-Яa-zA-Z ]{3,50}" autocomplete="off" placeholder='Ваше имя' required)
+								+svg('name',22,22)
+							ul
 						p
-							input(type='text' id='company' name='company' placeholder='Компания')
+							input(type='text' id='company' name='company' pattern="[а-яА-Яa-zA-Z ]{3,50}" autocomplete="off" placeholder='Компания' required)
 							+svg('company',26,24)
 						span Выберите вид транспорта
 						input(type='checkbox' name='auto' id='auto')
