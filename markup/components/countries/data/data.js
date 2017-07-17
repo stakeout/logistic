@@ -57,35 +57,35 @@ countries: {
         list: [
           {
             name: 'Болгария',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/bg.png'
           },
           {
             name: 'Венгрия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/hu.png'
           },
           {
             name: 'Молдавия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/md.png'
           },
           {
             name: 'Польша',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/pl.png'
           },
           {
             name: 'Румыния',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/ro.png'
           },
           {
             name: 'Словакия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/sk.png'
           },
           {
             name: 'Украина',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/ua.png'
           },
           {
             name: 'Чехия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/eastern/cz.png'
           },
           {
             name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',

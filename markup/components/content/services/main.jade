@@ -3,19 +3,19 @@ include ../../additional-services/additional-services
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
-			+b.SECTION.promo-services
+			+b.SECTION.promo-services.viewport-width
 				+e.inner.center
 					+e.H1.title.heading._h1 комплекс логистических услуг для малого и крупного бизнеса
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse quod ipsa exercitationem consectetur praesentium dolor neque voluptates dignissimos libero ipsum ex itaque, aspernatur, nemo quos sed dolorum, laboriosam deserunt.
 			+services
-			+b.SECTION.addition-services
+			+b.SECTION.addition-services.viewport-width
 				+e.inner.center
 					+e.H2.title.heading._h1 дополнительные услуги в сфере транспортно-логистических услуг
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse quod ipsa exercitationem consectetur praesentium dolor neque voluptates dignissimos libero ipsum ex itaque, aspernatur, nemo quos sed dolorum, laboriosam deserunt.
 			+additional-services
-			+b.SECTION.our-directions
+			+b.SECTION.our-directions.viewport-width
 				+e.inner.center
 					+e.H2.title.heading._h1 наши направления
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse quod ipsa exercitationem consectetur praesentium dolor neque voluptates dignissimos libero ipsum ex itaque, aspernatur, nemo quos sed dolorum, laboriosam deserunt.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse quod ipsa exercitationem consectetur praesentium dolor neque voluptates dignissimos libero ipsum ex itaque, aspernatur, nemo quos sed dolorum, laboriosam deserunt.
-					+e.A.link.btn(href='directions.html') подробнее
+					+e.A.link.btn._large(href='directions.html') подробнее
