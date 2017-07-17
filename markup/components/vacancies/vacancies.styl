@@ -1,0 +1,137 @@
+.vacancies 
+	background-image url(%=static=%general/bg_vacancies.png)
+	background-repeat no-repeat
+	background-size cover
+	&__inner
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		padding-top 60px
+	&__title
+		margin-top 140px
+		margin-bottom 30px
+		color $c_white
+		font-size 24px
+		font-weight 500
+		line-height 24px
+		text-transform uppercase
+		&_modal
+			color $c_text
+			margin-top 0
+	&__text 
+		width 516px
+		margin-bottom 90px
+		color $c_white
+		font-size 14px
+		font-weight 300
+		line-height 24px
+	&__list
+		row-flex()
+		justify-content: space-between;
+	&__item
+		col()
+		size(4)
+		display flex
+		align-items: center;
+		flex-basis 340px
+		min-height 240px
+		padding 60px 30px
+		text-align center
+		justify-content center
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+		margin-bottom 90px
+		&:hover
+			background-color $c_light-blue
+		span 
+			color: #2196f3;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 36px;
+	&__advantages-item
+		col()
+		size(4)
+		display flex
+		flex-direction column
+		align-items: center;
+		flex-basis 340px
+		text-align center
+		svg
+			margin-bottom 60px
+		span 
+			margin-bottom 30px
+			color: #2196f3;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 36px;
+		p 
+			width 180px
+			font-size 14px
+			font-weight 300
+			line-height 21px
+			color $c_textd
+	&__modal
+		// display none
+		position fixed
+		width 810px
+		height 440px
+		padding 30px
+		top calc(50% - 205px)
+		left calc(50% - 405px)
+		background-color $c_white
+		border-radius 5px
+		form
+			display flex
+			flex-wrap wrap
+			color $c_text
+			font-size 14px
+			line-height 24px
+			font-weight 300
+		label
+			position relative
+			width 100%
+		input, textarea
+			width 100%
+			margin-bottom 30px
+			padding-top 13px
+			padding-right 13px
+			padding-left 55px
+			padding-bottom 13px
+			font-size 14px
+			line-height 24px
+			background-color #e8eaf6
+			border none
+			outline none
+			border-radius 5px
+			resize none
+		::-webkit-input-placeholder
+			color #455a64
+		textarea
+			min-height 130px
+		svg
+			position absolute
+			top 14px
+			left 14px
+		span 
+			position relative
+			padding 18px 0
+			padding-left 50px
+			svg
+				top 17px
+				left 0
+		button
+			width 240px
+			margin-left auto
+			padding 18px 0
+			font-weight 700
+	&__col-left
+		width 360px
+		display flex
+		flex-wrap wrap
+	&__col-right
+		display flex
+		width 360px
+		margin-left 30px
+
