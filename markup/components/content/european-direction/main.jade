@@ -2,6 +2,14 @@ include ../../countries/countries
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
+			+b.SECTION.european-direction.viewport-width
+				+e.inner.center
+					+e.H2.title.heading._h1 комплекс транспортно-логистических услуг для малого и крупного бизнеса по всей европе
+					+e.UL.list
+						+e.LI.item Склады требующих особого уровня влажности, температурного режима и других нюансов.
+						+e.LI.item Партнеры-агенты во всех крупных морских портах
+						+e.LI.item Представители во всех крупных аэропортах стран Европы
+						+e.LI.item Регулярные грузоперевозки сборных грузов между странами Европы и Америкой, Азией и Россией
 			+countries(countries.europe.western)
 			+countries(countries.europe.eastern)
 			+countries(countries.europe.northern)

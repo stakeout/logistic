@@ -1,4 +1,17 @@
 .countries
+	h2
+		padding-top 90px
+		padding-bottom 30px
+		color #2196f3
+		font-size 24px
+		line-height 24px
+		font-weight 300
+	p 
+		margin-bottom 45px
+		color $c_text
+		font-size 14px
+		line-height 21px
+		font-weight 300
 	&__list
 		row-flex()
 		position relative
@@ -6,12 +19,29 @@
 	&__item
 		col()
 		flex-basis 165px
-		outline 1px solid
+		padding 15px 0
 		text-align center
+		border-radius 5px
+		background-color #f3f3f3
+		img
+			display block
+			margin 0 auto
+			margin-bottom 30px
+		span
+			color $c_text
+			font-size 14px
+			line-height 21px
+			font-weight 300
+		&:nth-child(-n+4)
+			margin-bottom 45px
 		&:last-child
 			position absolute
 			right -290px
 			max-width 290px
-		img
-			display block
-			margin 0 auto
+			background-color transparent
+			img
+				margin-bottom 50px
+			span
+				color #2196f3
+				font-size 18px
+				line-height 30px

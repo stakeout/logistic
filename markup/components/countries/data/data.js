@@ -12,35 +12,35 @@ countries: {
         list: [
           {
             name: 'Австрия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/at.png'
           },
           {
             name: 'Бельгия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/be.png'
           },
           {
             name: 'Великобритания',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/uk.png'
           },
           {
             name: 'Германия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/de.png'
           },
           {
             name: 'Люксембург',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/lu.png'
           },
           {
             name: 'Нидерланды',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/nl.png'
           },
           {
             name: 'Франция',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/fr.png'
           },
           {
             name: 'Швейцария',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/western/ch.png'
           },
           {
             name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
@@ -102,27 +102,27 @@ countries: {
         list: [
           {
             name: 'Дания',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/dk.png'
           },
           {
             name: 'Латвия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/lv.png'
           },
           {
             name: 'Литва',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/lt.png'
           },
           {
             name: 'Финляндия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/fi.png'
           },
           {
             name: 'Швеция',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/se.png'
           },
           {
             name: 'Эстония',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/northern/ee.png'
           },
           {
             name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
@@ -139,31 +139,31 @@ countries: {
         list: [
           {
             name: 'Греция',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/gr.png'
           },
           {
             name: 'Испания',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/es.png'
           },
           {
             name: 'Италия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/it.png'
           },
           {
             name: 'Португалия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/pt.png'
           },
           {
             name: 'Сербия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/rs.png'
           },
           {
             name: 'Словения',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/sl.png'
           },
           {
             name: 'Хорватия',
-            flagImgSource: 'http://placehold.it/90x60'
+            flagImgSource: '__static__img/content/europe/southern/hr.png'
           },
           {
             name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
