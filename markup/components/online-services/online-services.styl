@@ -1,0 +1,69 @@
+.online-services
+	background-image url(%=static=%general/bg_online-services.png)
+	background-repeat no-repeat
+	background-size cover
+	&__inner
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		padding-top 60px
+	&__title
+		margin-top 140px
+		margin-bottom 30px
+		color $c_white
+		font-size 24px
+		font-weight 500
+		line-height 24px
+		text-transform uppercase
+		&_modal
+			color $c_text
+			margin-top 0
+	&__text 
+		width 516px
+		margin-bottom 90px
+		color $c_white
+		font-size 14px
+		font-weight 300
+		line-height 24px
+	&__list
+		row-flex()
+		justify-content: space-between;
+	&__item
+		col()
+		size(2)
+		flex-basis 540px
+		padding 60px
+		margin-bottom 60px
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+		&:hover
+			background-color $c_light-blue
+		svg 
+			display inline-block
+			vertical-align middle
+		span 
+			display inline-block
+			width 275px
+			margin-left 55px
+			vertical-align middle
+			color: #2196f3;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 36px;
+	&__modal
+		display none
+		position fixed
+		top calc(50% - 400px)
+		left calc(50% - 470px)
+		width 940px
+		min-height 800px
+		padding 60px
+		background-color $c_white
+		z-index 999
+		outline 1px solid
+	&__modal-content
+		width 820px
+		height 600px
+		background-image url(%=static=%general/map_online-services.png)

@@ -1,0 +1,12 @@
+mixin countries(data)
+	+b.SECTION.countries
+		+e.inner.center
+			+e.HEADER.header
+				h2 #{data.header.title}
+				p #{data.header.text}
+			+e.UL.list
+				-var arr = data.list
+				- for(var i = 0; i < arr.length; i++)
+					+e.LI.item
+						img(src='#{arr[i].flagImgSource}')
+						span #{arr[i].name}

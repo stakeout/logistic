@@ -1,3 +1,8 @@
+include ../../countries/countries
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
+			+countries(countries.europe.western)
+			+countries(countries.europe.eastern)
+			+countries(countries.europe.northern)
+			+countries(countries.europe.southern)
