@@ -6,12 +6,14 @@ include ../../clients/clients
 include ../../request-form/request-form
 include ../../reviews/reviews
 include ../../map/map
+include ../../map-large/map-large
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
 			+request-form
 			+promo
 			+services
+			+map-large
 			+solutions(solutions)
 			+about-us
 			+clients

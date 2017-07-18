@@ -1,0 +1,41 @@
+.map-large
+	position relative
+	min-height 880px
+	background-color #1e88e5
+	background-image url(__static__general/map.svg)
+	background-repeat no-repeat
+	background-position center 85%
+	background-size 1170px 700px
+	&__inner
+		padding 90px 0
+	&__link
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		align-items: center;
+		position absolute
+		color $c_white
+		span
+			color $c_white
+			font-size 14px
+			font-weight 300
+			line-height 21px
+			text-transform uppercase
+			text-shadow 0 3px 6px #000
+		&_europe
+			top 46%
+			left 47%
+		&_america
+			top 50%
+			left 30%
+		&_asia
+			top 50%
+			left 65%
+		&_russia
+			top 40%
+			left 57%
+		&_belarus
+			top 40%
+			left 52%
+		
