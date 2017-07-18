@@ -1,6 +1,7 @@
 .navigation
 	margin-left auto
 	&__item
+		position relative
 		color $c_white
 		font-size 14px
 		font-weight 300
@@ -9,4 +10,17 @@
 			color $c_text
 		&:not(:last-child)
 			margin-right 25px
-		
+		&:after
+			position absolute
+			content ''
+			right 0
+			bottom -5px
+			width 0
+			height 2px
+			background-color $c_white
+			transition width .3s ease-out
+		&:hover:after
+			left 0
+			right auto
+			width 100%
+			

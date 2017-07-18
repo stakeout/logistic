@@ -2,6 +2,7 @@
 const slick = require('slick-carousel');
 const magnificPopup = require('magnific-popup');
 const jqValidation = require('jquery-validation');
+const wowJs = require('wow.js');
 import {filterByType} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav} from '../../components/header/header';
@@ -36,4 +37,15 @@ $(() => {
             enabled: true
         }
     });
+    let wow = new wowJs(
+        {
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 300,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: true,       // act on asynchronously loaded content (default is true)
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+);
+    wow.init();
 });

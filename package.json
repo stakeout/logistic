@@ -12,7 +12,8 @@
     "jquery-validation": "^1.16.0",
     "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.6.0",
-    "smart-grid": "^1.1.0"
+    "smart-grid": "^1.1.0",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
