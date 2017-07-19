@@ -1,0 +1,46 @@
+.service-advantages
+	&__list
+		row-flex()
+	&__item
+		col()
+		size(6)
+		position relative
+		padding-left 120px
+		&:not(:nth-last-child(-n+2))
+			margin-bottom 60px
+		b
+			display block
+			margin-bottom 30px
+			color #36c
+			font-size 18px
+			line-height 26px
+			font-weight 300
+	&__icon
+		position absolute
+		left 0
+//Ход выполнения
+.progress
+	&__list
+		row-flex()
+	&__item
+		col()
+		size(3)
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-direction column
+		align-items center
+		text-align center
+		b
+			color #36c
+			font-size 18px
+			line-height 26px
+			font-weight 300
+	&__icon
+		margin-bottom 60px
+//Наши направления
+.directions-list
+	background-color $c_blue
+	&__title
+		padding-top 60px
+		padding-bottom 90px

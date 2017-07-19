@@ -1,3 +1,8 @@
 mixin svg(name,width,height)
 	+e.SVG(class='icon_#{name}' width= width + 'px', height= height + 'px')
 		use(xlink:href='static/img/svg-symbols.svg#' +name)
+mixin input(type,checked)
+	if checked
+		input(class='class' name='name' type= type checked)
+	else
+		input(class='class' name='name' type= type)

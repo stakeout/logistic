@@ -67,6 +67,13 @@ ul,li,p,h1,h2,h3
 .hide
 	display none
 	outline 2px solid red
+.text
+	color $c_text
+	font-size 14px
+	line-height 21px
+	font-weight 300
+	&_white
+		color $c_white
 .btn
 	display inline-block
 	vertical-align top
@@ -81,21 +88,38 @@ ul,li,p,h1,h2,h3
 	box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
 	&_large
 		width 240px
-		height 60px
-		line-height 60px
+		padding 10px 0
+		text-align center
 	&_blue
 		background-color #03a9f4
 	&:hover
 		background-color $c_dark-blue
+#request-btn
+	&.stick
+		position fixed
+		left calc(50% - 570px)
+		bottom 90px
+		font-size 0
+		width 60px
+		height 60px
+		margin 0
+		padding 0
+		border-radius 50%
+		background-image url(__static__minified-svg/size-white.svg)
+		background-repeat no-repeat
+		background-position center
+		background-size 28px 28px
+		box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
+		z-index 1000
 // input:focus{ color: #222; background: #97ABBE; border-color:#999;}
 /*Only on valid*/
-input:valid{box-shadow: 0 0 2px rgba(0,255,0,1);}
-/*Only on focus and valid*/
-input:valid:focus{ background: rgba(0,255,0,.5); box-shadow: none;  }
-/*Only on invalid*/
-// input:invalid{box-shadow: 0 0 2px rgba(255,0,0,0.4);}
-/*Only on focus and invalid*/
-input:invalid:focus{ background: rgba(255,0,0,0.4); box-shadow: none;}
+// input:valid{box-shadow: 0 0 2px rgba(0,255,0,1);}
+// /*Only on focus and valid*/
+// input:valid:focus{ background: rgba(0,255,0,.5); box-shadow: none;  }
+// /*Only on invalid*/
+// // input:invalid{box-shadow: 0 0 2px rgba(255,0,0,0.4);}
+// /*Only on focus and invalid*/
+// input:invalid:focus{ background: rgba(255,0,0,0.4); box-shadow: none;}
 .overlay
 	display none
 	position absolute

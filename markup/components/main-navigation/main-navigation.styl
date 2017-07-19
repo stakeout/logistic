@@ -2,19 +2,22 @@
 	margin-left auto
 	&__item
 		position relative
+		padding 5px 0
 		color $c_white
 		font-size 14px
 		font-weight 300
 		line-height 24px
 		&.stick
 			color $c_text
+			&:after
+				background-color $c_text
 		&:not(:last-child)
 			margin-right 25px
 		&:after
 			position absolute
 			content ''
 			right 0
-			bottom -5px
+			bottom -2px
 			width 0
 			height 2px
 			background-color $c_white

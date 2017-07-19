@@ -1,0 +1,8 @@
+mixin full-viewport-width(data)
+	+b.SECTION(class='service-type_#{data.modifier}')
+		+e.inner.center
+			+e.H1.title.heading._h1 #{data.title}
+			p.text.text_white #{data.text}
+			+e.A.link.btn._large#request-btn(href='request-form.html') запрос на
+				br
+				| перевозку груза
