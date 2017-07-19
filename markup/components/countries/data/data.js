@@ -171,5 +171,90 @@ countries: {
           }
         ]
       }
-    }//europe
+    },  //europe
+    america: {
+      northern: {
+        header: 
+          {
+            title: 'Северная Америка',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Канада',
+            flagImgSource: '__static__img/content/america/northern/canada.png'
+          },
+          {
+            name: 'Мексика',
+            flagImgSource: '__static__img/content/america/northern/mexica.png'
+          },
+          {
+            name: 'США',
+            flagImgSource: '__static__img/content/america/northern/usa.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      southern: {
+        header: 
+          {
+            title: 'Южная Америка',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Аргентина',
+            flagImgSource: '__static__img/content/america/southern/argentina.png'
+          },
+          {
+            name: 'Бразилия',
+            flagImgSource: '__static__img/content/america/southern/brazil.png'
+          },
+          {
+            name: 'Чилли',
+            flagImgSource: '__static__img/content/america/southern/chile.png'
+          },
+          {
+            name: 'Эквадор',
+            flagImgSource: '__static__img/content/america/southern/ecuador.png'
+          },
+          {
+            name: 'Перу',
+            flagImgSource: '__static__img/content/america/southern/peru.png'
+          },
+          {
+            name: 'Венесуэла',
+            flagImgSource: '__static__img/content/america/southern/venezuela.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      central: {
+        header: 
+          {
+            title: 'Центральная Америка',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Коста-Рика',
+            flagImgSource: '__static__img/content/america/central/costa_rica.png'
+          },
+          {
+            name: 'Панама',
+            flagImgSource: '__static__img/content/america/central/panama.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      }
+    }  //america
   }//countries
