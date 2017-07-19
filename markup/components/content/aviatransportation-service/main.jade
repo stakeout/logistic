@@ -1,5 +1,9 @@
 include ../../full-viewport-width/full-viewport-width
 include ../../map-large/map-large
+include ../../reviews/reviews
+include ../../clients/clients
+include ../../map/map
+include ../../additional-services/additional-services
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
@@ -32,16 +36,16 @@ mixin main()
 					+e.H2.title.heading._h2 Ход выполнения
 					+e.UL.list
 						+e.LI.item
-							+svg('plane',90,90)
+							img(src='__static__img/content/progress-icons/order.gif')
 							b Lorem ipsum dolor sit amet. dolor sit amet
 						+e.LI.item
-							+svg('plane',90,90)
+							img(src='__static__img/content/progress-icons/registration.gif')
 							b Lorem ipsum dolor sit amet. dolor sit amet
 						+e.LI.item
-							+svg('plane',90,90)
+							img(src='__static__img/content/progress-icons/cargo_sending.gif')
 							b Lorem ipsum dolor sit amet. dolor sit amet
 						+e.LI.item
-							+svg('plane',90,90)
+							img(src='__static__img/content/progress-icons/delivery.gif')
 							b Lorem ipsum dolor sit amet. dolor sit amet
 			+b.SECTION.directions-list
 				+e.inner.center
@@ -60,3 +64,44 @@ mixin main()
 							span Америка
 							p Грузоперевозки сборных и комплектных грузов, экспорт и иморт из России в Беларусь и в Беларусь из&nbsp;России
 			+map-large
+			+b.SECTION.cargo-types
+				+e.inner.center
+					+e.H2.title.heading._h2 виды перевозимых грузов
+					+e.UL.list
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+						+e.LI.item
+							+svg('plane',90,60)
+							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+			+b.SECTION.about-specialist
+				+e.inner.center
+					+e.info
+						+e.H2.title.heading._h1 виктория зайко
+						b специализируется на авиаперевозках
+						p.text.text_white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur recusandae debitis reiciendis maxime consequuntur incidunt praesentium, earum. Unde dignissimos ad omnis, ipsum ab voluptatum deserunt distinctio, inventore aperiam perferendis enim?
+						+e.A.link.btn._large(href='#') получить
+							br
+							| консультацию
+			+reviews
+			+clients
+			+additional-services
+			+map({modifier: 'right'})
