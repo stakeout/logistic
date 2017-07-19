@@ -7,12 +7,12 @@ export const stickyNav = () => {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 75) {
             $($header).addClass('stick');
-            $($logoImg).attr('src', '/static/img/general/logo_blue.svg');
+            $($logoImg).attr('src', 'static/img/general/logo_blue.svg');
             $($links).addClass('stick');
             $($lang).addClass('stick');
             $($promoBtn).addClass('stick');
         } else {
-            $($logoImg).attr('src', '/static/img/general/logo_white.svg');
+            $($logoImg).attr('src', 'static/img/general/logo_white.svg');
             $($header).removeClass('stick');
             $($links).removeClass('stick');
             $($lang).removeClass('stick');
