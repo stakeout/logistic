@@ -1,0 +1,13 @@
+extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/content/azian-direction/main
+include ../components/footer/footer
+
+block head
+	- var pageTitle = 'ТВ Логистик';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+block content
+	+header
+	+main
+	+footer

@@ -256,5 +256,196 @@ countries: {
           }
         ]
       }
-    }  //america
+    },  //america
+    azian: {
+      eastern: {
+        header: 
+          {
+            title: 'Восточная Азия',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Китай',
+            flagImgSource: '__static__img/content/azian/eastern/china.png'
+          },
+          {
+            name: 'Япония',
+            flagImgSource: '__static__img/content/azian/eastern/japan.png'
+          },
+          {
+            name: 'Монголия',
+            flagImgSource: '__static__img/content/azian/eastern/mongolia.png'
+          },
+          {
+            name: 'Южная Корея',
+            flagImgSource: '__static__img/content/europe/eastern/pl.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      western: {
+        header: 
+          {
+            title: 'Западная Азия',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Армения',
+            flagImgSource: '__static__img/content/azian/western/armenia.png'
+          },
+          {
+            name: 'Азербайджан',
+            flagImgSource: '__static__img/content/azian/western/azerbaijan.png'
+          },
+          {
+            name: 'Кипр',
+            flagImgSource: '__static__img/content/azian/western/cyprus.png'
+          },
+          {
+            name: 'Грузия',
+            flagImgSource: '__static__img/content/azian/western/georgia.png'
+          },
+          {
+            name: 'Иран',
+            flagImgSource: '__static__img/content/azian/western/iran.png'
+          },
+          {
+            name: 'Израиль',
+            flagImgSource: '__static__img/content/azian/western/israel.png'
+          },
+          {
+            name: 'Саудовская Аравия',
+            flagImgSource: '__static__img/content/azian/western/saudi_arabia.png'
+          },
+          {
+            name: 'Турция',
+            flagImgSource: '__static__img/content/azian/western/turkey.png'
+          },
+          {
+            name: 'ОАЭ',
+            flagImgSource: '__static__img/content/azian/western/uae.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      central: {
+        header: 
+          {
+            title: 'Центральная Азия',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Казахстан',
+            flagImgSource: '__static__img/content/azian/central/kazahstan.png'
+          },
+          {
+            name: 'Киргизстан',
+            flagImgSource: '__static__img/content/azian/central/kyrgyzstan.png'
+          },
+          {
+            name: 'Таджикистан',
+            flagImgSource: '__static__img/content/azian/central/tajikistan.png'
+          },
+          {
+            name: 'Туркменистан',
+            flagImgSource: '__static__img/content/azian/central/turkmenistan.png'
+          },
+          {
+            name: 'Узбекистан',
+            flagImgSource: '__static__img/content/azian/central/uzbekistan.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      south_east: {
+        header: 
+          {
+            title: 'Юговосточная Азия',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Камбоджа',
+            flagImgSource: '__static__img/content/azian/south-east/cambodia.png'
+          },
+          {
+            name: 'Филипины',
+            flagImgSource: '__static__img/content/azian/south-east/filipin.png'
+          },
+          {
+            name: 'Индонезия',
+            flagImgSource: '__static__img/content/azian/south-east/indonesia.png'
+          },
+          {
+            name: 'Лаос',
+            flagImgSource: '__static__img/content/azian/south-east/laos.png'
+          },
+          {
+            name: 'Малазия',
+            flagImgSource: '__static__img/content/azian/south-east/malaysia.png'
+          },
+          {
+            name: 'Мьянма',
+            flagImgSource: '__static__img/content/azian/south-east/myanmar.png'
+          },
+          {
+            name: 'Сингапур',
+            flagImgSource: '__static__img/content/azian/south-east/singapore.png'
+          },
+          {
+            name: 'Таиланд',
+            flagImgSource: '__static__img/content/azian/south-east/thailand.png'
+          },
+          {
+            name: 'Вьетнам',
+            flagImgSource: '__static__img/content/azian/south-east/viethan.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      southern: {
+        header: 
+          {
+            title: 'Южная Азия',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Бангладеш',
+            flagImgSource: '__static__img/content/azian/southern/bangladesh.png'
+          },
+          {
+            name: 'Индия',
+            flagImgSource: '__static__img/content/azian/southern/india.png'
+          },
+          {
+            name: 'Пакистан',
+            flagImgSource: '__static__img/content/azian/southern/pakistan.png'
+          },
+          {
+            name: 'Шири-Ланка',
+            flagImgSource: '__static__img/content/azian/southern/sri-lanka.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      }
+    }
   }//countries
