@@ -13,7 +13,7 @@ export const map = () => {
             hintContent: 'ТВ Логистик',
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '/static/img/minified-svg/blue_map_marker.svg',
+            iconImageHref: 'static/img/minified-svg/blue_map_marker.svg',
             iconImageSize: [50, 42],
             iconImageOffset: [-28, -20]
         });

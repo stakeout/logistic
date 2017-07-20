@@ -369,7 +369,7 @@ countries: {
           }
         ]
       },
-      south_east: {
+      southEast: {
         header: 
           {
             title: 'Юговосточная Азия',
