@@ -1,70 +1,68 @@
 mixin request-form(data)
-	+b.request-form
+	+b.request-form.hide
 		+e.FORM.form(action='#' method='post')
 			+e.inner
-				+e.left-col
-					.top-row
-						p
-							label(for=name)
-								input(type='text' id='name' name='name' pattern="[а-яА-Яa-zA-Z ]{3,50}" autocomplete="off" placeholder='Ваше имя' required)
-								+svg('name',22,22)
-							ul
-						p
-							input(type='text' id='company' name='company' pattern="[а-яА-Яa-zA-Z ]{3,50}" autocomplete="off" placeholder='Компания' required)
-							+svg('company',26,24)
-						span Выберите вид транспорта
-						input(type='checkbox' name='auto' id='auto')
-						label(for='auto')
-							+svg('auto',24,24)
-						input(type='checkbox' name='train' id='train')
-						label(for='train')
-							+svg('train',22,22)
-						input(type='checkbox' name='plane' id='plane')
-						label(for='plane')
-							+svg('plane',24,24)
-						input(type='checkbox' name='ship' id='ship')
-						label(for='ship')
-							+svg('sea',24,24)
-					.bottom-row
+				+e.top-row
+					label(for=name)
+						input(type='text' id='name' name='name' min='3' max='30' autocomplete="off" placeholder='Ваше имя' required)
+						+svg('name',22,22)
+					label(for=company)
+						input(type='text' id='company' name='company' pattern="[а-яА-Яa-zA-Z ]{3,50}" autocomplete="off" placeholder='Компания' required)
+						+svg('company',26,24)
+					label(for=phone)
+						input(type='tel' name='phone' id='phone' placeholder='Телефон')
+						+svg('phone',22,22)
+					label(for=email)
+						input(type='email' name='email' id='email' placeholder='Электронаня почта')
+						+svg('mail',24,22)
+					+e.FIELDSET.form-group
+						.wrap
+							span Выберите вид транспорта:
+							input(type='checkbox' name='auto' id='auto')
+							label(for='auto')
+								+svg('auto',24,24)
+							input(type='checkbox' name='train' id='train')
+							label(for='train')
+								+svg('train',22,22)
+							input(type='checkbox' name='plane' id='plane')
+							label(for='plane')
+								+svg('plane',24,24)
+							input(type='checkbox' name='ship' id='ship')
+							label(for='ship')
+								+svg('sea',24,24)
+					label(for=weight)
+						input(type='text' name='weight' id='weight' placeholder='Вес груза')
+						+svg('weight',24,24)
+					label(for=size)
+						input(type='text' name='size' id='size' placeholder='Объем груза')
+						+svg('size',24,24)
+				+e.bottom-row
+					+e.left-col
 						.from
 							+svg('arrow-left',24,24)
 							span Откуда
 						.where
 							span Куда
 							+svg('arrow-left',24,24)
-						p
+						label(for=from-country)
 							input(type='text' id='from-country' name='from-country' placeholder='Из какой страны?')
 							+svg('country',24,24)
-						p
+						label(for=where-country)
 							input(type='text' id='where-country' name='where-country' placeholder='В какую страну?')
 							+svg('country',24,24)
-						p
+						label(for=from-town)
 							input(type='text' id='from-town' name='from-town' placeholder='Из какого города?')
 							+svg('city',24,24)
-						p
+						label(for=where-town)
 							input(type='text' id='where-town' name='where-town' placeholder='В какой город?')
 							+svg('city',24,24)
-						p
+						label(for=from-index)
 							input(type='text' id='from-index' name='from-index' placeholder='Индекс')
 							+svg('index',24,24)
-						p
+						label(for=where-index)
 							input(type='text' id='where-index' name='where-index' placeholder='Индекс')
 							+svg('index',24,24)
-				+e.right-col
-					.top-row
-						p
-							input(type='tel' name='phone' id='phone' placeholder='Телефон')
-							+svg('phone',22,22)
-						p
-							input(type='email' name='email' id='email' placeholder='Электронаня почта')
-							+svg('mail',24,22)
-						p
-							input(type='text' name='weight' id='weight' placeholder='Вес груза')
-							+svg('weight',24,24)
-						p
-							input(type='text' name='size' id='size' placeholder='Объем груза')
-							+svg('size',24,24)
-					.bottom-row
+					+e.right-col
 						span Особенности груза
 						input(type='checkbox' name='temperature' id='temperature')
 						label(for='temperature') Температурный режим
@@ -79,7 +77,7 @@ mixin request-form(data)
 						input(type='checkbox' name='insurance' id='insurance')
 						label(for='insurance') Страхование
 						+e.TEXTAREA.textarea(name='message' id='message' placeholder='Примечание')
-				+e.bottom-row
+				+e.footer
 					p
 						+svg('protect',24,24)
 						span Данные не передаются третьим лицам

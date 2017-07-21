@@ -6,9 +6,11 @@ const wowJs = require('wow.js');
 import {filterByType} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav} from '../../components/header/header';
-import {validation} from '../../components/request-form/request-form';
+import {validation, showForm} from '../../components/request-form/request-form';
 $(() => {
     stickyNav();
+    showForm();
+    validation();
     $('.clients__list').slick({
         dots: true,
         slidesToShow: 4,

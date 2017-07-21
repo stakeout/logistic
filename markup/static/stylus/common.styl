@@ -66,7 +66,6 @@ ul,li,p,h1,h2,h3
 	display block
 .hide
 	display none
-	outline 2px solid red
 .text
 	color $c_text
 	font-size 14px
@@ -111,6 +110,8 @@ ul,li,p,h1,h2,h3
 		background-size 28px 28px
 		box-shadow 0 3px 6px rgba(0, 0, 0, 0.19)
 		z-index 1000
+input
+	border none
 // input:focus{ color: #222; background: #97ABBE; border-color:#999;}
 /*Only on valid*/
 // input:valid{box-shadow: 0 0 2px rgba(0,255,0,1);}
@@ -120,11 +121,15 @@ ul,li,p,h1,h2,h3
 // // input:invalid{box-shadow: 0 0 2px rgba(255,0,0,0.4);}
 // /*Only on focus and invalid*/
 // input:invalid:focus{ background: rgba(255,0,0,0.4); box-shadow: none;}
+.success
+	border 2px solid rgba(0,255,0,.5)
+.error
+	border: 2px solid rgba(255,0,0,0.4)
 .overlay
-	display none
 	position absolute
 	left 0
 	top 0
 	width 100%
 	height 100%
 	background-color rgba(0,0,0,.5)
+	z-index 1001

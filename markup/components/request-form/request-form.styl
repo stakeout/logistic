@@ -2,13 +2,14 @@
 	position fixed
 	left calc(50% - 555px)
 	top 10%
-	z-index 1001
-	display none
+	z-index 1002
+	display block
 	&__inner
-		display -webkit-flex
-		display -ms-flex
-		display flex
-		flex-wrap wrap
+		// display -webkit-flex
+		// display -ms-flex
+		// display flex
+		// flex-direction column
+		// flex-wrap wrap
 		max-width 1110px
 		padding 30px 30px 60px
 		color $c_text
@@ -17,14 +18,16 @@
 		line-height 24px
 		background-color $c_white
 		border-radius 5px
-		p
+		label
 			position relative
+		input[type=checkbox]
+			display none
 		input
 			&:not([type=checkbox]):not([type=submit])
 				width 240px
 				height 50px
 				padding-left 60px
-				border none
+				// border none
 				background-color #e8eaf6
 				border-radius 5px
 				&::-webkit-input-placeholder 
@@ -56,50 +59,28 @@
 		position absolute
 		top calc(50% - 12px)
 		left 15px
-	&__left-col,
-	&__right-col
-		flex-basis 50%
-		// outline 1px solid
-		& > .top-row
+	&__top-row
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-content: space-between;
+		align-items: center;
+		min-height 130px
+		margin-bottom 60px
+		// outline 1px solid red
+	&__form-group
+		flex-basis 48.5%
+		width 100%
+		// outline 2px dotted black
+		.wrap
 			display -webkit-flex
 			display -ms-flex
 			display flex
 			flex-wrap wrap
 			justify-content space-between
-			align-content: space-between;
-			align-items: center;
-			min-height 130px
-			margin-bottom 60px
-			// outline 1px solid red
-		& > .bottom-row
-			display -webkit-flex
-			display -ms-flex
-			display flex
-			flex-wrap wrap
-			justify-content space-between
-			align-content: space-between;
-			min-height 260px
-			// outline 1px solid green
-			.from,
-			.where
-				position relative
-				width 240px
-				svg
-					position static
-					display inline-block
-					vertical-align middle
-			.from
-				span
-					padding-left 30px
-			.where
-				span
-					padding-right 30px
-				svg
-					transform rotate(180deg)
-	&__left-col
-		padding-right 15px
-		input[type=checkbox]
-			display none
+			align-items center
 		label
 			position relative
 			width 50px
@@ -107,8 +88,45 @@
 			background-color #e8eaf6
 			border-radius 5px
 			cursor pointer
+		span
+			flex-basis 50%
+	&__bottom-row
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		// align-content: space-between;
+		min-height 260px
+		// outline 1px solid green
+		.from,
+		.where
+			position relative
+			width 240px
+			svg
+				position static
+				display inline-block
+				vertical-align middle
+		.from
+			span
+				padding-left 30px
+		.where
+			span
+				padding-right 30px
+			svg
+				transform rotate(180deg)
+	&__left-col,
 	&__right-col
-		padding-left 15px
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-wrap wrap
+		align-items: center;
+		flex-basis 48.5%
+		// outline 1px solid
+	&__left-col
+		justify-content: space-between;
+	&__right-col
 		span
 			width 100%
 		input[type=checkbox]
@@ -163,7 +181,7 @@
 		&:-ms-input-placeholder      
 				color $c_text
 				opacity .5
-	&__bottom-row
+	&__footer
 		display -webkit-flex
 		display -ms-flex
 		display flex
