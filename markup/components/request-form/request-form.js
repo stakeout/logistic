@@ -64,17 +64,20 @@ export const validation = () => {
     function checkInput(inputValidation) {
         inputValidation.CustomValidation.invalidities = [];
         let input = inputValidation.input;
-
+        let isInvalid = false;
         for (let i = 0; i < inputValidation.CustomValidation.validityChecks.length; i++) {
-            let isInvalid = inputValidation.CustomValidation.validityChecks[i].isInvalid(input);
+            isInvalid = inputValidation.CustomValidation.validityChecks[i].isInvalid(input);
             if (isInvalid) {
-                input.classList.add('error');
-            } else {
-                input.classList.add('success');
-                input.classList.remove('error');
-
+                break;
             }
         }
+        if (isInvalid) {
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+            input.classList.add('success');
+        }
+        return isInvalid;
 
     }
 
@@ -96,17 +99,22 @@ export const validation = () => {
 
     const inputValidation = [usernameInput, companyInput, phoneInput];
 
-    let inputs = document.querySelectorAll('input:not([type=\'submit\']):not([type=\'checkbox\']):required');
-    // for ( let i = 0; i < inputs.length; i++ ) {
-    //     inputs[i].addEventListener('keyup', function () {
-    //         checkInput(this);
-    //     });
-    // }
-
     let submit = document.querySelector('input[type=\'submit\']');
-    submit.addEventListener('click', function () {
+    const form = document.querySelector('.request-form');
+    function validationForm() {
+        let isAllValid = true;
         for ( let i = 0; i < inputValidation.length; i++ ) {
-            checkInput(inputValidation[i]);
+            let isInvalidCurrent = checkInput(inputValidation[i]);
+            if (isInvalidCurrent && isAllValid) {
+                isAllValid = false;
+            }
+        }
+        return isAllValid;
+    }
+    document.querySelector('.request-form').addEventListener('submit', function (e) {
+        if (!validationForm()) {
+            console.log('1');
+            e.preventDefault();    // stop form from submitting
         }
     });
 };
