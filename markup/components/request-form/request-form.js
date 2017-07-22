@@ -111,9 +111,8 @@ export const validation = () => {
         }
         return isAllValid;
     }
-    document.querySelector('.request-form').addEventListener('submit', function (e) {
+    form.addEventListener('submit', function (e) {
         if (!validationForm()) {
-            console.log('1');
             e.preventDefault();    // stop form from submitting
         }
     });
