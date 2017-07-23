@@ -6,98 +6,98 @@ mixin clients(data)
 				+e.LI.item.active#all(data-type='all') Все
 				+e.LI.item#wood(data-type='wood') Деревообрабатывающая промышленность
 				+e.LI.item#materials(data-type='materials') Строительные материалы
-				+e.LI.item#food(data-type='') Питание
-				+e.LI.item#auto(data-type='') Автомобильная техника
-				+e.LI.item#furniture(data-type='') Дом и мебель
-				+e.LI.item#paper(data-type='') Целлюлозно-бумажная
-				+e.LI.item#agricultura(data-type='') Сельхозтехника
-				+e.LI.item#repair(data-type='') Строительство и ремонт
+				+e.LI.item#food(data-type='foods') Питание
+				+e.LI.item#auto(data-type='auto') Автомобильная техника
+				+e.LI.item#furniture(data-type='house') Дом и мебель
+				+e.LI.item#paper(data-type='paper') Целлюлозно-бумажная
+				+e.LI.item#agricultura(data-type='agricultural') Сельхозтехника
+				+e.LI.item#repair(data-type='repair') Строительство и ремонт
 			+e.UL.list
-				+e.LI.item(data-type='wood')
+				+e.LI.item(data-type='auto') 
 					img(src='static/img/content/clients_logo/renault.jpg' width="90" height="60")
 					b Renault
 					p Французская автомобилестроительная корпорация. Штаб-квартира компании расположена в городе Булонь-Бийанкур, недалеко от Парижа.
-				+e.LI.item(data-type='wood')
+				+e.LI.item(data-type='foods') 
 					img(src="%=static=%img/content/clients_logo/kfc.jpg" width="90" height="60")
 					b KFC
 					p Международная сеть ресторанов общественного питания, специализирующаяся на блюдах из курицы
-				+e.LI.item
+				+e.LI.item(data-type='wood')
 					img(src="%=static=%img/content/clients_logo/cronospan.jpg" width="90" height="60")
 					b Кроношпан
 					p Кроношпан - мировой лидер в области производства высококачественных древесных плит и смежной продукции.
-				+e.LI.item
+				+e.LI.item(data-type='auto') 
 					img(src="%=static=%img/content/clients_logo/krone.jpg" width="90" height="60")
 					b Krone
 					p В мире транспорта марка является символом отличного качества, продуманных практических решений и минимальных издержек за срок службы.
-				+e.LI.item
+				+e.LI.item(data-type='agricultural')
 					img(src="%=static=%img/content/clients_logo/agrodinance.jpg" width="90" height="60")
 					b Агрофинанс
 					p Компания является универсальным оператором рынка лизинга, оказывающим услуги финансовой аренды современной сельскохозяйственной техники и оборудования.
-				+e.LI.item(data-type='wood')
+				+e.LI.item(data-type='repair') 
 					img(src="%=static=%img/content/clients_logo/aluteh.jpg" width="90" height="60")
 					b Алютех
 					p Один из ведущих европейских поставщиков роллетных систем и секционных ворот – объединяет ряд современных производственных предприятий и сбытовых компаний.
-				+e.LI.item
+				+e.LI.item(data-type='house') 
 					img(src="%=static=%img/content/clients_logo/ami-mebel.jpg" width="90" height="60")
 					b Ами-мебель
 					p Унитарное предприятие «Торговый дом «Лагуна» - это крупнейшая торговая розничная сеть «АМИ Мебель»
-				+e.LI.item
+				+e.LI.item(data-type='materials')
 					img(src="%=static=%img/content/clients_logo/artkeramika.jpg" width="90" height="60")
 					b Арткерамикабел
 					p Розничная компания, в состав которой входит 9 салонов керамической плитки, сантехники, мебели для ванной комнаты и сопутствующих товаров в Беларуси:
-				+e.LI.item
+				+e.LI.item(data-type='foods') 
 					img(src="%=static=%img/content/clients_logo/avd_production.jpg" width="90" height="60")
 					b АВД Продакшен
 					p Стабильно развивиющееся небольшое предприятие занимается упаковкой кофе, чая, какао
-				+e.LI.item
+				+e.LI.item(data-type='house') 
 					img(src="%=static=%img/content/clients_logo/beloboi.jpg" width="90" height="60")
 					b Белобои
 					p В настоящее время УП «Минская обойная фабрика» является одним из крупнейших производителей обоев на территории СНГ
-				+e.LI.item
+				+e.LI.item(data-type='materials')
 					img(src="%=static=%img/content/clients_logo/belsvamo.jpg" width="90" height="60")
 					b Белсвамо
 					p Крупнейший в Республике Беларусь поставщик профессионального сварочного оборудования, материалов
-				+e.LI.item
+				+e.LI.item(data-type='materials')
 					img(src="%=static=%img/content/clients_logo/coswick.jpg" width="90" height="60")
 					b Косвик
 					p Паркетная Фабрика Косвик является крупнейшим на территории Республики Беларусь производителем паркета и паркетной доски
-				+e.LI.item
+				+e.LI.item(data-type='paper') 
 					img(src="%=static=%img/content/clients_logo/gosznak.jpg" width="90" height="60")
 					b Госзнак
 					p Крупнейшее специализированное предприятие по изготовлению всех видов бланков строгой отчетности и специальных материалов для защиты их от подделки
-				+e.LI.item
+				+e.LI.item(data-type='auto') 
 					img(src="%=static=%img/content/clients_logo/grimme.jpg" width="90" height="60")
 					b Grimme
 					p Свекловичной и овощной техники предлагает широчайшую производственную программу, включающую более 150 вариантов машин.
-				+e.LI.item
+				+e.LI.item(data-type='foods') 
 					img(src="%=static=%img/content/clients_logo/karavan.jpg" width="90" height="60")
 					b Караван
 					p На сегодняшний день мы занимаем лидирующее положение среди компаний, специализирующихся на продаже чайно-кофейной продукции.
-				+e.LI.item
+				+e.LI.item(data-type='materials')
 					img(src="%=static=%img/content/clients_logo/keramin.jpg" width="90" height="60")
 					b Keramin
 					p Крупный производитель керамической плитки, керамического гранита, санитарной керамики и керамического кирпича
-				+e.LI.item
+				+e.LI.item(data-type='paper') 
 					img(src="%=static=%img/content/clients_logo/minsk_typ.jpg" width="90" height="60")
 					b Минская типография
 					p Специализируется на изготовлении картонной упаковки из тонких картонов различной сложности способом офсетной печати
-				+e.LI.item
+				+e.LI.item(data-type='repair') 
 					img(src="%=static=%img/content/clients_logo/oma.jpg" width="90" height="60")
 					b Ома
 					p Крупнейшая оптовая и розничная торговая сеть строительных материалов и инструментов, а также товаров для дома, сада и огорода в Беларуси
-				+e.LI.item
+				+e.LI.item(data-type='agricultural')
 					img(src="%=static=%img/content/clients_logo/polumya_agro.jpg" width="90" height="60")
 					b ПолымяАгро
 					p Компания занимающаяся запасными частями и комплектующими для сельскохозяйственной техники и товаров для животноводства
-				+e.LI.item
+				+e.LI.item(data-type='house') 
 					img(src="%=static=%img/content/clients_logo/softform.jpg" width="90" height="60")
 					b Софтформ
 					p Современное, высокотехнологичное белорусско-чешское предприятие, которое специализируется на выпуске высококачественной мебели для дома и офиса
-				+e.LI.item
+				+e.LI.item(data-type='materials')
 					img(src="%=static=%img/content/clients_logo/vatra.jpg" width="90" height="60")
 					b Ватра
 					p Крупнейший производитель сварочных электродов в Республике Беларусь
-				+e.LI.item
+				+e.LI.item(data-type='wood')
 					img(src="%=static=%img/content/clients_logo/vmg-ind.jpg" width="90" height="60")
 					b VMG ind
 					p Одна из компаний международного деревообрабатывающего холдинга «VMG
