@@ -3,21 +3,21 @@ mixin clients(data)
 		+e.inner.center
 			+e.H2.title.heading._h2 Клиенты
 			+b.UL.filter
-				+e.LI.item.active#all(data-type='all') Все
-				+e.LI.item#wood(data-type='wood') Деревообрабатывающая промышленность
-				+e.LI.item#materials(data-type='materials') Строительные материалы
-				+e.LI.item#food(data-type='foods') Питание
-				+e.LI.item#auto(data-type='auto') Автомобильная техника
-				+e.LI.item#furniture(data-type='house') Дом и мебель
-				+e.LI.item#paper(data-type='paper') Целлюлозно-бумажная
-				+e.LI.item#agricultura(data-type='agricultural') Сельхозтехника
-				+e.LI.item#repair(data-type='repair') Строительство и ремонт
+				+e.LI.item.active(data-type='all') Все
+				+e.LI.item(data-type='wood') Деревообрабатывающая промышленность
+				+e.LI.item(data-type='materials') Строительные материалы
+				+e.LI.item(data-type='food') Питание
+				+e.LI.item(data-type='auto') Автомобильная техника
+				+e.LI.item(data-type='house') Дом и мебель
+				+e.LI.item(data-type='paper') Целлюлозно-бумажная
+				+e.LI.item(data-type='agricultural') Сельхозтехника
+				+e.LI.item(data-type='repair') Строительство и ремонт
 			+e.UL.list
 				+e.LI.item(data-type='auto') 
 					img(src='static/img/content/clients_logo/renault.jpg' width="90" height="60")
 					b Renault
 					p Французская автомобилестроительная корпорация. Штаб-квартира компании расположена в городе Булонь-Бийанкур, недалеко от Парижа.
-				+e.LI.item(data-type='foods') 
+				+e.LI.item(data-type='food') 
 					img(src="%=static=%img/content/clients_logo/kfc.jpg" width="90" height="60")
 					b KFC
 					p Международная сеть ресторанов общественного питания, специализирующаяся на блюдах из курицы
@@ -45,7 +45,7 @@ mixin clients(data)
 					img(src="%=static=%img/content/clients_logo/artkeramika.jpg" width="90" height="60")
 					b Арткерамикабел
 					p Розничная компания, в состав которой входит 9 салонов керамической плитки, сантехники, мебели для ванной комнаты и сопутствующих товаров в Беларуси:
-				+e.LI.item(data-type='foods') 
+				+e.LI.item(data-type='food') 
 					img(src="%=static=%img/content/clients_logo/avd_production.jpg" width="90" height="60")
 					b АВД Продакшен
 					p Стабильно развивиющееся небольшое предприятие занимается упаковкой кофе, чая, какао
@@ -69,7 +69,7 @@ mixin clients(data)
 					img(src="%=static=%img/content/clients_logo/grimme.jpg" width="90" height="60")
 					b Grimme
 					p Свекловичной и овощной техники предлагает широчайшую производственную программу, включающую более 150 вариантов машин.
-				+e.LI.item(data-type='foods') 
+				+e.LI.item(data-type='food') 
 					img(src="%=static=%img/content/clients_logo/karavan.jpg" width="90" height="60")
 					b Караван
 					p На сегодняшний день мы занимаем лидирующее положение среди компаний, специализирующихся на продаже чайно-кофейной продукции.

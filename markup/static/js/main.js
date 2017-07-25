@@ -1,9 +1,11 @@
-// import '../../components/slick/slick.min';
-const slick = require('slick-carousel');
+import slick from 'slick-carousel';
+// const slick = require('slick-carousel');
 const magnificPopup = require('magnific-popup');
 const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
-import {filterByType} from '../../components/clients/clients';
+// const mixitup = require('mixitup');
+// import mixitup from 'mixitup';
+import {filterByType, carousel} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
@@ -11,7 +13,7 @@ $(() => {
     stickyNav();
     showForm();
     validation();
-    $('.clients__list').slick({
+    carousel.slick({
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
