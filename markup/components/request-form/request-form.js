@@ -29,7 +29,6 @@ export const validation = () => {
                 return illegalCharacters ? true : false;
             },
             invalidityMessage: 'Пишите только буквы, пробел и дефис'
-            // element: document.querySelector('label[for=\'username\'] li:nth-child(2)')
         }
     ];
 
@@ -39,28 +38,31 @@ export const validation = () => {
                 return input.value.length < 3;
             },
             invalidityMessage: 'Введите как минимум 3 символа'
-            // element: document.querySelector('label[for=\'username\'] li:nth-child(1)')
         },
         {
             isInvalid: function (input) {
-                let illegalCharacters = input.value.match(/[^а-яА-Яa-zA-Z -]/g);
+                let illegalCharacters = input.value.match(/[^а-яА-Яa-zA-Z0-9 -]/g);
                 return illegalCharacters ? true : false;
             },
             invalidityMessage: 'Пишите только буквы, пробел и дефис'
-            // element: document.querySelector('label[for=\'username\'] li:nth-child(2)')
         }
     ];
 
     let phoneValidityChecks = [
         {
             isInvalid: function (input) {
-                return input.value.length < 3; // что это за проверка такая странная как пароль))
-            },
-            invalidityMessage: 'This password needs to match the first one'
+                return input.value.length < 3;
+            }
         }
     ];
 
-// почему бы тут не вешать все классы
+    let emailValidityChecks = [
+        {
+            isInvalid: function (input) {
+                return input.value.length < 3;
+            }
+        }
+    ];
     function checkInput(inputValidation) {
         inputValidation.CustomValidation.invalidities = [];
         let input = inputValidation.input;
@@ -87,6 +89,8 @@ export const validation = () => {
     companyInput.input = document.querySelector('#company');
     let phoneInput = {};
     phoneInput.input = document.querySelector('#phone');
+    let emailInput = {};
+    emailInput.input = document.querySelector('#email');
 
     usernameInput.CustomValidation = new CustomValidation();
     usernameInput.CustomValidation.validityChecks = nameValidityChecks;
@@ -97,8 +101,12 @@ export const validation = () => {
     phoneInput.CustomValidation = new CustomValidation();
     phoneInput.CustomValidation.validityChecks = phoneValidityChecks;
 
-    const inputValidation = [usernameInput, companyInput, phoneInput];
+    emailInput.CustomValidation = new CustomValidation();
+    emailInput.CustomValidation.validityChecks = emailValidityChecks;
 
+    const inputValidation = [usernameInput, companyInput, phoneInput, emailInput];
+    const checkboxes = $('.request-form__top-row input[type=checkbox]');
+    const labels = checkboxes.next('label');
     let submit = document.querySelector('input[type=\'submit\']');
     const form = document.querySelector('.request-form');
     function validationForm() {
@@ -111,8 +119,19 @@ export const validation = () => {
         }
         return isAllValid;
     }
+    function validateCheckbox() {
+        let isValid = true;
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (!checkboxes[i].checked) {
+                // console.log(checkboxes[i]);
+                // checkboxes[i].nextElementSibling.classList.add('error');
+                isValid = false;
+            }
+        }
+        return isValid;
+    }
     form.addEventListener('submit', function (e) {
-        if (!validationForm()) {
+        if (!validationForm() && !validateCheckbox()) {
             e.preventDefault();    // stop form from submitting
         }
     });

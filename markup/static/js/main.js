@@ -1,10 +1,8 @@
 import slick from 'slick-carousel';
 // const slick = require('slick-carousel');
-const magnificPopup = require('magnific-popup');
+import magnificPopup from 'magnific-popup';
 const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
-// const mixitup = require('mixitup');
-// import mixitup from 'mixitup';
 import {filterByType, carousel} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav} from '../../components/header/header';
