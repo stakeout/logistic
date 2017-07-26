@@ -447,5 +447,438 @@ countries: {
           }
         ]
       }
-    }
+    }, //azian    
+    russian: {
+      far_eastern: {
+        header: 
+          {
+            title: 'Дальневосточный федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Владивосток',
+            flagImgSource: '__static__img/content/russian/far_eastern/vladivostok.png'
+          },
+          {
+            name: 'Благовещенск',
+            flagImgSource: '__static__img/content/russian/far_eastern/blagoveschensk.png'
+          },
+          {
+            name: 'Хабаровск',
+            flagImgSource: '__static__img/content/russian/far_eastern/khabarovsk.png'
+          },
+          {
+            name: 'Якутск',
+            flagImgSource: '__static__img/content/russian/far_eastern/yakutsk.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      volga: {
+        header: 
+          {
+            title: 'Приволжский федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Казань',
+            flagImgSource: '__static__img/content/russian/volga/kazan.png'
+          },
+          {
+            name: 'Самара',
+            flagImgSource: '__static__img/content/russian/volga/samara.png'
+          },
+          {
+            name: 'Уфа',
+            flagImgSource: '__static__img/content/russian/volga/ufa.png'
+          },
+          {
+            name: 'Пермь',
+            flagImgSource: '__static__img/content/russian/volga/perm.png'
+          },
+          {
+            name: 'Саратов',
+            flagImgSource: '__static__img/content/russian/volga/saratov.png'
+          },
+          {
+            name: 'Тольятти',
+            flagImgSource: '__static__img/content/russian/volga/togliatti.png'
+          },
+          {
+            name: 'Ижевск',
+            flagImgSource: '__static__img/content/russian/volga/izhevsk.png'
+          },
+          {
+            name: 'Ульяновск',
+            flagImgSource: '__static__img/content/russian/volga/ulyanovsk.png'
+          },
+          {
+            name: 'Оренбург',
+            flagImgSource: '__static__img/content/russian/volga/orenburg.png'
+          },
+          {
+            name: 'Пенза',
+            flagImgSource: '__static__img/content/russian/volga/penza.png'
+          },
+          {
+            name: 'Набережные Челны',
+            flagImgSource: '__static__img/content/russian/volga/chelny.png'
+          },
+          {
+            name: 'Киров',
+            flagImgSource: '__static__img/content/russian/volga/kirov.png'
+          },
+          {
+            name: 'Балаково',
+            flagImgSource: '__static__img/content/russian/volga/balakovo.png'
+          },
+          {
+            name: 'Чебоксары',
+            flagImgSource: '__static__img/content/russian/volga/cheboksar.png'
+          },
+          {
+            name: 'Дзержинск',
+            flagImgSource: '__static__img/content/russian/volga/dzerzhinsk.png'
+          },
+          {
+            name: 'Энгельс',
+            flagImgSource: '__static__img/content/russian/volga/engels.png'
+          },
+          {
+            name: 'Нижнекамск',
+            flagImgSource: '__static__img/content/russian/volga/nizhnekamsk.png'
+          },
+          {
+            name: 'Нижний Новгород',
+            flagImgSource: '__static__img/content/russian/volga/nizhny_novgorod.png'
+          },
+          {
+            name: 'Орск',
+            flagImgSource: '__static__img/content/russian/volga/orsk.png'
+          },
+          {
+            name: 'Саранск',
+            flagImgSource: '__static__img/content/russian/volga/saransk.png'
+          },
+          {
+            name: 'Стерлитамак',
+            flagImgSource: '__static__img/content/russian/volga/sterlitamak.png'
+          },
+          {
+            name: 'Йошкар-Ола',
+            flagImgSource: '__static__img/content/russian/volga/yoshkar-ola.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      north_west: {
+        header: 
+          {
+            title: 'Северо-Западный федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Санкт-Петербург',
+            flagImgSource: '__static__img/content/russian/north_west/saint_petersburg.png'
+          },
+          {
+            name: 'Калининград',
+            flagImgSource: '__static__img/content/russian/north_west/kaliningrad.png'
+          },
+          {
+            name: 'Архангельск',
+            flagImgSource: '__static__img/content/russian/north_west/arkhangelsk.png'
+          },
+          {
+            name: 'Череповец',
+            flagImgSource: '__static__img/content/russian/north_west/cherepovets.png'
+          },
+          {
+            name: 'Мурманск',
+            flagImgSource: '__static__img/content/russian/north_west/murmansk.png'
+          },
+          {
+            name: 'Петрозаводск',
+            flagImgSource: '__static__img/content/russian/north_west/petrozavodsk.png'
+          },
+          {
+            name: 'Псков',
+            flagImgSource: '__static__img/content/russian/north_west/pskov.png'
+          },
+          {
+            name: 'Северодвинск',
+            flagImgSource: '__static__img/content/russian/north_west/severodvinsk.png'
+          },
+          {
+            name: 'Сыктывкар',
+            flagImgSource: '__static__img/content/russian/north_west/syktyvkar.png'
+          },
+          {
+            name: 'Великий Новгород',
+            flagImgSource: '__static__img/content/russian/north_west/veliky_novgorod.png'
+          },
+          {
+            name: 'Вологда',
+            flagImgSource: '__static__img/content/russian/north_west/vologda.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      siberian: {
+        header: 
+          {
+            title: 'Сибирский федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Новосибирск',
+            flagImgSource: '__static__img/content/russian/siberian/novosibirsk.png'
+          },
+          {
+            name: 'Омск',
+            flagImgSource: '__static__img/content/russian/siberian/omsk.png'
+          },
+          {
+            name: 'Красноярск',
+            flagImgSource: '__static__img/content/russian/siberian/krasnoyarsk.png'
+          },
+          {
+            name: 'Барнаул',
+            flagImgSource: '__static__img/content/russian/siberian/barnaul.png'
+          },
+          {
+            name: 'Иркутск',
+            flagImgSource: '__static__img/content/russian/siberian/irkutsk.png'
+          },
+          {
+            name: 'Новокузнецк',
+            flagImgSource: '__static__img/content/russian/siberian/novokuznetsk.png'
+          },
+          {
+            name: 'Кемерово',
+            flagImgSource: '__static__img/content/russian/siberian/kemerovo.png'
+          },
+          {
+            name: 'Братск',
+            flagImgSource: '__static__img/content/russian/siberian/bratsk.png'
+          },
+          {
+            name: 'Чита',
+            flagImgSource: '__static__img/content/russian/siberian/chita.png'
+          },
+          {
+            name: 'Улан-Удэ',
+            flagImgSource: '__static__img/content/russian/siberian/ulan-ude.png'
+          },
+          {
+            name: 'Томск',
+            flagImgSource: '__static__img/content/russian/siberian/tomsk.png'
+          },
+          {
+            name: 'Ангарск',
+            flagImgSource: '__static__img/content/russian/siberian/angarsk.png'
+          },
+          {
+            name: 'Бийск',
+            flagImgSource: '__static__img/content/russian/siberian/biysk.png'
+          },
+          {
+            name: 'Прокопьевск',
+            flagImgSource: '__static__img/content/russian/siberian/prokopyevsk.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      ural: {
+        header: 
+          {
+            title: 'Уральский федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Екатеринбург',
+            flagImgSource: '__static__img/content/russian/ural/yekaterinburg.png'
+          },
+          {
+            name: 'Челябинск',
+            flagImgSource: '__static__img/content/russian/ural/chelyabinsk.png'
+          },
+          {
+            name: 'Тюмень',
+            flagImgSource: '__static__img/content/russian/ural/tyumen.png'
+          },
+          {
+            name: 'Курган',
+            flagImgSource: '__static__img/content/russian/ural/kurgan.png'
+          },
+          {
+            name: 'Магнитогорск',
+            flagImgSource: '__static__img/content/russian/ural/magnitogorsk.png'
+          },
+          {
+            name: 'Нижневартовск',
+            flagImgSource: '__static__img/content/russian/ural/nizhnevartovsk.png'
+          },
+          {
+            name: 'Нижний Тагил',
+            flagImgSource: '__static__img/content/russian/ural/nizhny_tagil.png'
+          },
+          {
+            name: 'Сургут',
+            flagImgSource: '__static__img/content/russian/ural/surgut.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      central: {
+        header: 
+          {
+            title: 'Центральный федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Москва',
+            flagImgSource: '__static__img/content/russian/central/moscow.png'
+          },
+          {
+            name: 'Воронеж',
+            flagImgSource: '__static__img/content/russian/central/voronezh.png'
+          },
+          {
+            name: 'Ярославль',
+            flagImgSource: '__static__img/content/russian/central/yaroslavl.png'
+          },
+          {
+            name: 'Рязань',
+            flagImgSource: '__static__img/content/russian/central/ryazan.png'
+          },
+          {
+            name: 'Тула',
+            flagImgSource: '__static__img/content/russian/central/tula.png'
+          },
+          {
+            name: 'Курск',
+            flagImgSource: '__static__img/content/russian/central/kursk.png'
+          },
+          {
+            name: 'Липецк',
+            flagImgSource: '__static__img/content/russian/central/lipetsk.png'
+          },
+          {
+            name: 'Брянск',
+            flagImgSource: '__static__img/content/russian/central/bryansk.png'
+          },
+          {
+            name: 'Иваново',
+            flagImgSource: '__static__img/content/russian/central/ivanovo.png'
+          },
+          {
+            name: 'Тверь',
+            flagImgSource: '__static__img/content/russian/central/tver.png'
+          },
+          {
+            name: 'Белгород',
+            flagImgSource: '__static__img/content/russian/central/belgorod.png'
+          },
+          {
+            name: 'Владимир',
+            flagImgSource: '__static__img/content/russian/central/vladimir.png'
+          },
+          {
+            name: 'Калуга',
+            flagImgSource: '__static__img/content/russian/central/kaluga.png'
+          },
+          {
+            name: 'Кострома',
+            flagImgSource: '__static__img/content/russian/central/kostroma.png'
+          },
+          {
+            name: 'Орёл',
+            flagImgSource: '__static__img/content/russian/central/oryol.png'
+          },
+          {
+            name: 'Смоленск',
+            flagImgSource: '__static__img/content/russian/central/smolensk.png'
+          },
+          {
+            name: 'Тамбов',
+            flagImgSource: '__static__img/content/russian/central/tambov.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      },
+      southern: {
+        header: 
+          {
+            title: 'Южный федеральный округ',
+            text: 'Регулярные перевозки грузов'
+          },
+        list: [
+          {
+            name: 'Ростов-на-Дону',
+            flagImgSource: '__static__img/content/russian/southern/rostov-na-donu.png'
+          },
+          {
+            name: 'Волгоград',
+            flagImgSource: '__static__img/content/russian/southern/volgograd.png'
+          },
+          {
+            name: 'Краснодар',
+            flagImgSource: '__static__img/content/russian/southern/krasnodar.png'
+          },
+          {
+            name: 'Астрахань',
+            flagImgSource: '__static__img/content/russian/southern/astrakhan.png'
+          },
+          {
+            name: 'Сочи',
+            flagImgSource: '__static__img/content/russian/southern/sochi.png'
+          },
+          {
+            name: 'Таганрог',
+            flagImgSource: '__static__img/content/russian/southern/taganrog.png'
+          },
+          {
+            name: 'Волжский',
+            flagImgSource: '__static__img/content/russian/southern/volzhskiy.png'
+          },
+          {
+            name: 'Новороссийск',
+            flagImgSource: '__static__img/content/russian/southern/novorossiysk.png'
+          },
+          {
+            name: 'Шахты',
+            flagImgSource: '__static__img/content/russian/southern/shakhty.png'
+          },
+          {
+            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+            flagImgSource: 'http://placehold.it/90x90'
+          }
+        ]
+      }
+    }  //russian
   }//countries
