@@ -121,10 +121,12 @@ export const validation = () => {
     }
     function validateCheckbox() {
         let isValid = true;
+        const error = document.querySelector('.request-form__form-group .arrow');
         for (let i = 0; i < checkboxes.length; i++) {
             if (!checkboxes[i].checked) {
                 // console.log(checkboxes[i]);
                 // checkboxes[i].nextElementSibling.classList.add('error');
+                error.classList.add('error-checkbox');
                 isValid = false;
             }
         }

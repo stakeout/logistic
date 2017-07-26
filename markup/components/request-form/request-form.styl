@@ -3,7 +3,7 @@
 	left calc(50% - 555px)
 	top 10%
 	z-index 1002
-	display block
+	// display block
 	&__inner
 		// display -webkit-flex
 		// display -ms-flex
@@ -85,6 +85,18 @@
 			flex-wrap wrap
 			justify-content space-between
 			align-items center
+			position relative
+		.arrow
+			display none
+			position absolute
+			width 60px
+			height 2px
+			top calc(50% - 1px)
+			left calc(50% - 70px)
+			background-color #f50
+			animation error .5s infinite
+			&.error-checkbox
+				display block
 		label
 			position relative
 			width 50px
@@ -206,3 +218,10 @@
 		padding-bottom 18px
 		font-weight 700
 		border-radius 5px
+@keyframes error
+	0%
+		transform translateX(0)
+	50%
+		transform translateX(20px)
+	100%
+		transform translateX(0)
