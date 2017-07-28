@@ -3,11 +3,10 @@ $offset = 30px
 $offset_one_side = ($offset / 2)
 $atom = (100% / $columns)
 
-$break_lg = 1170px
 $break_md = 992px
 $break_sm = 720px
 $break_xs = 576px
-$break_xxs = 440px
+$break_xxs = 420px
 
 reset()
     body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td
@@ -59,19 +58,14 @@ reset()
 
 
 wrapper()
-    max-width 1280px
-    padding-left 30px
-    padding-right 30px
+    max-width 1170px
+    padding-left 20px
+    padding-right 20px
     margin 0 auto
 
-    @media screen and (max-width: $break_lg)
-        padding-left 30px
-        padding-right 30px
-    
-
     @media screen and (max-width: $break_md)
-        padding-left 15px
-        padding-right 15px
+        padding-left 20px
+        padding-right 20px
     
 
     @media screen and (max-width: $break_sm)
@@ -80,13 +74,13 @@ wrapper()
     
 
     @media screen and (max-width: $break_xs)
-        padding-left 10px
-        padding-right 10px
+        padding-left 15px
+        padding-right 15px
     
 
     @media screen and (max-width: $break_xxs)
-        padding-left 10px
-        padding-right 10px
+        padding-left 15px
+        padding-right 15px
     
 
 row-flex()
@@ -143,60 +137,6 @@ offset-left-padding($n)
 offset-right-padding($n)
     $value = $atom * $n
     padding-right "calc(%s + %s)" % ($value $offset_one_side)
-
-size-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        width "calc(%s - %s)" % ($value $offset)
-    
-
-offset-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        margin-left "calc(%s + %s)" % ($value $offset_one_side)
-        margin-right "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-offset-left-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        margin-left "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-offset-right-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        margin-right "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-offset-padding-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        padding-left "calc(%s + %s)" % ($value $offset_one_side)
-        padding-right "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-offset-left-padding-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        padding-left "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-offset-right-padding-lg($n)
-    @media screen and (max-width: $break_lg)
-        $value = $atom * $n
-        padding-right "calc(%s + %s)" % ($value $offset_one_side)
-    
-
-lg($name, $value)
-    @media screen and (max-width: $break_lg)
-        {$name} $value
-    
-
-lg-block(content)
-    @media screen and (max-width: $break_lg)
-        {content}
-    
 
 size-md($n)
     @media screen and (max-width: $break_md)

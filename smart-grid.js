@@ -4,17 +4,13 @@ const settings = {
     columns: 12,
     offset: '30px',
     container: {
-        maxWidth: '1280px',
-        fields: '30px'
+        maxWidth: '1170px',
+        fields: '20px'
     },
     breakPoints: {
-        lg: {
-            width: '1170px',
-            fields: '30px'
-        },
         md: {
             width: '992px',
-            fields: '30px'
+            fields: '20px'
         },
         sm: {
             width: '720px',
@@ -22,11 +18,11 @@ const settings = {
         },
         xs: {
             width: '576px',
-            fields: '10px'
+            fields: '15px'
         },
         xxs: {
-            width: '440px',
-            fields: '10px'
+            width: '420px',
+            fields: '15px'
         }
     },
     oldSizeStyle: false,

@@ -1,3 +1,4 @@
+include ../language/language
 mixin main-navigation(data)
 	+b.NAV.navigation
 		+e.A.item(href='index.html') Главная
@@ -7,3 +8,10 @@ mixin main-navigation(data)
 		+e.A.item(href='vacancies.html') Вакансии
 		+e.A.item(href='online-services.html') Онлайн-сервисы
 		+e.A.item(href='contacts.html') Контакты
+		+language
+		+e.contacts
+			+e.A.phone.btn(href='tel:+375172183326') Телефон
+				+svg('phone-white',15,15)
+			+e.A.mail._mail.btn(href='mailto:info@tvlogistic.by') Email
+				+svg('phone-white',15,15)
+		

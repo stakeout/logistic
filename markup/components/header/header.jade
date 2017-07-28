@@ -1,9 +1,9 @@
 include ../logo/logo
 include ../main-navigation/main-navigation
-include ../language/language
 mixin header(data)
 	+b.HEADER(class='page-header')
 		+e.inner.center
 			+logo
 			+main-navigation
-			+language
+			+e.BUTTON.nav-toggle#nav-toggle.act
+				span.burger меню
