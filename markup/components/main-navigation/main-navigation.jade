@@ -1,17 +1,18 @@
 include ../language/language
 mixin main-navigation(data)
 	+b.NAV.navigation
-		+e.A.item(href='index.html') Главная
-		+e.A.item(href='direction.html') Направления
-		+e.A.item(href='services.html') Услуги
-		+e.A.item(href='about-us.html') О нас
-		+e.A.item(href='vacancies.html') Вакансии
-		+e.A.item(href='online-services.html') Онлайн-сервисы
-		+e.A.item(href='contacts.html') Контакты
-		+language
+		+e.inner
+			+e.A.item(href='index.html') Главная
+			+e.A.item(href='direction.html') Направления
+			+e.A.item(href='services.html') Услуги
+			+e.A.item(href='about-us.html') О нас
+			+e.A.item(href='vacancies.html') Вакансии
+			+e.A.item(href='online-services.html') Онлайн-сервисы
+			+e.A.item(href='contacts.html') Контакты
 		+e.contacts
 			+e.A.phone.btn(href='tel:+375172183326') Телефон
-				+svg('phone-white',15,15)
+				+svg('phone-white',25,25)
 			+e.A.mail._mail.btn(href='mailto:info@tvlogistic.by') Email
-				+svg('phone-white',15,15)
+				+svg('phone-white',25,25)
+		+language
 		

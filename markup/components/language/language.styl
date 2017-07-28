@@ -1,5 +1,11 @@
 .language
 	padding-left 55px
+	xxs-block({
+		position: absolute
+		left: 20px
+		top: 30px
+		padding-left: 0
+	})
 	span
 		display block
 		width 40px
@@ -13,6 +19,10 @@
 		background-color $c_white
 		border-radius 10px
 		cursor pointer
+		xxs-block({
+			font-size: 18px
+			
+		})
 		&.stick
 			color $c_white
 			background-color $c_blue

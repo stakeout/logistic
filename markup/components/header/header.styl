@@ -7,7 +7,10 @@
 	padding-top 60px
 	transition: all 0.4s ease-in-out;
 	z-index 1000
-	// display none
+	xxs-block({
+		padding-top: 0
+		z-index: 100
+	})
 	&.stick
 		padding-top 10px
 		padding-bottom 10px
@@ -23,15 +26,20 @@
 		align-items center
 		min-height 55px
 		position relative
+		xxs-block(padding-top, 20px)
 	&__nav-toggle
 		display none
 		position absolute
 		width 30px
 		height 30px
-		top 20px
-		right 120px
+		top 30px
+		right 25px
 		border none
 		background-color transparent
+		xxs-block({
+			display: block
+			z-index: 101
+		})
 		& .burger
 			font-size 0
 			background-color: #fff
@@ -63,7 +71,7 @@
 				height 0
 				&:after,
 				&:before
-					background-color $c_white
+					background-color $c_blue
 					top 1px
 				&:after
 					transform rotate(45deg)
