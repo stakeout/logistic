@@ -6,6 +6,9 @@
 		background-repeat no-repeat
 		background-position center center
 		background-size cover
+		xxs-block({
+			background-size: 414px 500px	
+		})
 	&__inner
 		display -webkit-flex
 		display -ms-flex
@@ -14,9 +17,13 @@
 		height 900px
 		padding-top 80px
 		padding-bottom 80px
+		xxs-block({
+			height: 500px
+		})
 	&__list
 		row-flex()
 		flex-basis 100%
+		xxs(display, none)
 	&_page &__list
 		margin-top auto
 	&__item
@@ -40,9 +47,15 @@
 		margin-left auto
 		padding 22px 50px
 		font-weight 500
+		xxs-block({
+			margin: auto auto 0
+		})
 	&_page &__link
 		display none
 	&__bottom-row
+		xxs-block({
+			display: none
+		})
 		p
 			margin-bottom 20px
 			color $c_text
