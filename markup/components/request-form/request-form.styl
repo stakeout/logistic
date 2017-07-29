@@ -4,12 +4,12 @@
 	top 10%
 	z-index 1002
 	// display block
+	xxs-block({
+		position: absolute
+		width: 90%
+		left: calc(50% - 45%)
+	})
 	&__inner
-		// display -webkit-flex
-		// display -ms-flex
-		// display flex
-		// flex-direction column
-		// flex-wrap wrap
 		max-width 1110px
 		padding 30px 30px 60px
 		color $c_text
@@ -18,8 +18,17 @@
 		line-height 24px
 		background-color $c_white
 		border-radius 5px
+		xxs-block({
+			display: flex
+			flex-direction: column
+			padding: 10px
+		})
 		label
 			position relative
+			xxs-block({
+				width: 100%
+				margin-bottom: 5px
+			})
 		input[type=checkbox]
 			display none
 		input
@@ -30,6 +39,9 @@
 				background-color #e8eaf6
 				border-radius 5px
 				outline none
+				xxs-block({
+					width: 100%	
+				})
 				&::-webkit-input-placeholder
 						color $c_text
 						opacity .5
@@ -76,8 +88,10 @@
 		// outline 1px solid red
 	&__form-group
 		flex-basis 48.5%
-		width 100%
-		// outline 2px dotted black
+		xxs-block({
+			flex-basis: 100%
+			padding-bottom: 30px
+		})
 		.wrap
 			display -webkit-flex
 			display -ms-flex
@@ -106,6 +120,11 @@
 			cursor pointer
 		span
 			flex-basis 50%
+			xxs-block({
+				flex-basis: 100%
+				padding-top: 10px
+				padding-bottom: 10px
+			})
 	&__bottom-row
 		display -webkit-flex
 		display -ms-flex
@@ -140,6 +159,9 @@
 		align-items: center;
 		flex-basis 48.5%
 		// outline 1px solid
+		xxs-block({
+			flex-basis: 100%	
+		})
 	&__left-col
 		justify-content: space-between;
 	&__right-col

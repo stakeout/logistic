@@ -17,8 +17,18 @@
 		font-size 14px
 		line-height 21px
 		box-sizing border-box
+		xxs-block({
+			padding-bottom: 0
+			padding-top: 30px
+			flex-basis: 50%
+			border-bottom: 2px solid #e8eaf6
+			font-size: 12px
+		})
 		&:not(:last-child)
 			border-right 2px solid #e8eaf6
+			xxs(border-right, none)
+		&:nth-child(odd)
+			xxs(border-right, 2px solid #e8eaf6)
 		&:hover
 			background $c_light-blue
 		b 
@@ -30,11 +40,14 @@
 			font-weight: 500;
 			color $c_dark-blue
 			text-transform uppercase
+			xxs(width, 150px)
 		p 
 			margin-top auto
 			padding 0 30px
 			font-weight 400
 			color $c_medium-blue
+			xxs(display, none)
 	&__icon
 		align-self center
 		margin-bottom 65px
+		xxs(margin-bottom, 35px)

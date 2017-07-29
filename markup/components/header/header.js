@@ -21,7 +21,7 @@ export const stickyNav = () => {
             }
         }
     });
-    if (window.matchMedia('(max-width: 420px)').matches) {
+    if (window.matchMedia('(max-width: 414px)').matches) {
         $($promoBtn).addClass('stick');
     } else {
         $($promoBtn).removeClass('stick');
