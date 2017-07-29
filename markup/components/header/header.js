@@ -4,28 +4,27 @@ export const stickyNav = () => {
     const $links = $('.navigation__item');
     const $lang = $('.language span');
     const $promoBtn = $('#request-btn');
-    $(window).scroll(function () {
-        if (window.matchMedia('(min-width: 420px)').matches) {
-            if ($(this).scrollTop() > 75) {
-                $($header).addClass('stick');
-                $($logoImg).attr('src', 'static/img/general/logo_blue.svg');
-                $($links).addClass('stick');
-                $($lang).addClass('stick');
-                $($promoBtn).addClass('stick');
-            } else {
-                $($logoImg).attr('src', 'static/img/general/logo_white.svg');
-                $($header).removeClass('stick');
-                $($links).removeClass('stick');
-                $($lang).removeClass('stick');
-                $($promoBtn).removeClass('stick');
-            }
-        }
-    });
+    const $navToggle = $('.burger');
     if (window.matchMedia('(max-width: 414px)').matches) {
         $($promoBtn).addClass('stick');
     } else {
         $($promoBtn).removeClass('stick');
     }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 75) {
+            $($header).addClass('stick');
+            $($logoImg).attr('src', 'static/img/general/logo_blue.svg');
+            $($links).addClass('stick');
+            $($lang).addClass('stick');
+            $($navToggle).addClass('stick');
+        } else {
+            $($logoImg).attr('src', 'static/img/general/logo_white.svg');
+            $($header).removeClass('stick');
+            $($links).removeClass('stick');
+            $($lang).removeClass('stick');
+            $($navToggle).removeClass('stick');
+        }
+    });
 };
 export const mobileNav = () => {
     const navBtn = document.querySelector('#nav-toggle');

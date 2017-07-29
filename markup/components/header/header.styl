@@ -15,9 +15,14 @@
 		padding-top 10px
 		padding-bottom 10px
 		color $c_text
-		transition: all 0.4s ease-in-out;   
+		transition: all 0.4s ease-in-out;
 		background: rgba(255,255,255,1);
 		box-shadow: 3px 0 6px rgba(0, 0, 0, 0.19)
+		xxs-block({
+			padding-top: 0
+			padding-bottom: 0
+			box-shadow: 3px 0 6px rgba(0, 0, 0, 0.19)
+		})
 	&__inner
 		display -webkit-flex
 		display -ms-flex
@@ -32,7 +37,7 @@
 		position absolute
 		width 30px
 		height 30px
-		top 30px
+		top 15px
 		right 25px
 		border none
 		background-color transparent
@@ -41,9 +46,14 @@
 			display: block
 			z-index: 101
 		})
+		& .burger.stick
+			background-color: $c_blue
+			&:after,
+			&:before 
+				background-color: $c_blue
 		& .burger
 			font-size 0
-			background-color: #fff
+			background-color: $c_white
 			border-radius: 1px
 			height: 2px
 			width: 100%
@@ -55,7 +65,7 @@
 			&:after,
 			&:before 
 				content: ''
-				background-color: #fff
+				background-color: $c_white
 				border-radius: 1px
 				height: 2px
 				width: 100%
@@ -78,4 +88,4 @@
 					transform rotate(45deg)
 				&:before
 					transform rotate(-45deg)
-			
+		
