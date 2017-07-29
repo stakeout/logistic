@@ -5,10 +5,11 @@ const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
 import {filterByType, carousel} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
-import {stickyNav} from '../../components/header/header';
+import {stickyNav, mobileNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
 $(() => {
     stickyNav();
+    mobileNav();
     showForm();
     validation();
     carousel.slick({
