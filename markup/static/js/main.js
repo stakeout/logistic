@@ -3,7 +3,7 @@ import slick from 'slick-carousel';
 import magnificPopup from 'magnific-popup';
 const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
-import {filterByType, carousel} from '../../components/clients/clients';
+import {filterByType, carousel, slickCarouselSettins} from '../../components/clients/clients';
 import {map} from '../../components/map/map';
 import {stickyNav, mobileNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
@@ -12,41 +12,7 @@ $(() => {
     mobileNav();
     showForm();
     validation();
-    carousel.slick({
-        arrows: false,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 720,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-        ]
-    });
+    slickCarouselSettins();
     $('.office-life__list').slick({
         dots: false,
         centerMode: true,
