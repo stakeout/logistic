@@ -11,6 +11,7 @@
 		padding-top 60px
 	&__title
 		margin-top 140px
+		xxs(margin-top, 50px)
 		margin-bottom 30px
 		color $c_white
 		font-size 24px
@@ -18,7 +19,7 @@
 		line-height 24px
 		text-transform uppercase
 	&__text 
-		width 516px
+		max-width 516px
 		margin-bottom 90px
 		color $c_white
 		font-size 14px
@@ -27,9 +28,11 @@
 .direction-list
 	row-flex()
 	justify-content: space-between;
+	xxs(justify-content, center)
 	&__link
 		col()
 		size(3)
+		size-xxs(12)
 		display -webkit-flex
 		display -ms-flex
 		display flex
@@ -43,6 +46,13 @@
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
 		&:hover
 			background-color $c_light-blue
+		xxs-block({
+			padding: 45px 30px
+			flex-basis: 100%
+			min-height: 220px
+		})
+		&:not(:last-child)
+			xxs(margin-bottom, 30px)
 		span 
 			color: #2196f3;
 			font-size: 24px;
@@ -54,3 +64,4 @@
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 21px;
+		
