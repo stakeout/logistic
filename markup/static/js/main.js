@@ -4,6 +4,7 @@ import magnificPopup from 'magnific-popup';
 const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
 import {filterByType, carousel, slickCarouselSettins} from '../../components/clients/clients';
+import {reviewsMagnificPopup, reviewsCarousel} from '../../components/reviews/reviews';
 import {map} from '../../components/map/map';
 import {stickyNav, mobileNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
@@ -13,6 +14,8 @@ $(() => {
     showForm();
     validation();
     slickCarouselSettins();
+    reviewsMagnificPopup();
+    reviewsCarousel();
     $('.office-life__list').slick({
         dots: false,
         centerMode: true,
@@ -24,17 +27,6 @@ $(() => {
     filterByType();
     map();
     // validation();
-    $('.reviews__list').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        closeOnContentClick: true,
-        image: {
-            verticalFit: true
-        },
-        gallery: {
-            enabled: true
-        }
-    });
     let wow = new wowJs(
         {
             boxClass: 'wow',      // animated element css class (default is wow)
