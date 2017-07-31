@@ -14,14 +14,11 @@
 	font-size 0
 	line-height 0
 	position absolute
-	top 50%
+	top calc(50% - 60px)
 	display block
 	width 20px
 	height 20px
 	padding 0
-	-webkit-transform translate(0, -50%)
-	-ms-transform translate(0, -50%)
-	transform translate(0, -50%)
 	cursor pointer
 	color transparent
 	border none
@@ -48,18 +45,29 @@
 
 .slick-prev:before,
 .slick-next:before
-	font-family 'slick'
+	// font-family 'slick'
+	position absolute
+	top calc(50% - 7px)
+	display block
+	width 15px
+	height 15px
+	border 2px solid $c_blue
+	border-left none
+	border-top none
 	font-size 20px
 	line-height 1
 	opacity .75
-	color white
+	color $c_blue
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 
 .slick-prev
-	left -25px
+	left -12px
 	&:before
-		content '←'
+		content ''
+		right -7px
+		transform rotate(135deg)
+		
 
 [dir='rtl']
 	.slick-prev
@@ -74,9 +82,11 @@
 			content '←'
 
 .slick-next
-	right -25px
+	right -12px
 	&:before
-		content '→'
+		content ''
+		left -7px
+		transform rotate(-45deg)
 
 .slick-dotted
 	&.slick-slider
