@@ -10,6 +10,7 @@
 		padding-top 60px
 	&__title
 		margin-top 140px
+		xxs(margin-top, 50px)
 		margin-bottom 30px
 		color $c_white
 		font-size 24px
@@ -20,8 +21,9 @@
 			color $c_text
 			margin-top 0
 	&__text 
-		width 516px
+		max-width 516px
 		margin-bottom 90px
+		xxs(margin-bottom, 60px)
 		color $c_white
 		font-size 14px
 		font-weight 300
@@ -29,9 +31,11 @@
 	&__list
 		row-flex()
 		justify-content: space-between;
+		xxs(justify-content, center)
 	&__item
 		col()
 		size(4)
+		size-xxs(12)
 		display flex
 		align-items: center;
 		flex-basis 340px
@@ -45,6 +49,13 @@
 		margin-bottom 90px
 		&:hover
 			background-color $c_light-blue
+		xxs-block({
+			min-height: 180px
+			padding: 30px
+			margin-bottom: 30px
+			flex-basis: 100%
+			
+		})
 		span 
 			color: #2196f3;
 			font-size: 24px;
@@ -53,15 +64,19 @@
 	&__advantages-item
 		col()
 		size(4)
+		size-xxs(12)
 		display flex
 		flex-direction column
 		align-items: center;
 		flex-basis 340px
 		text-align center
+		xxs(margin-top, 45px)
 		svg
 			margin-bottom 60px
+			xxs(margin-bottom, 15px)
 		span 
 			margin-bottom 30px
+			xxs(margin-bottom, 15px)
 			color: #2196f3;
 			font-size: 24px;
 			font-weight: 300;
@@ -72,8 +87,9 @@
 			font-weight 300
 			line-height 21px
 			color $c_text
+			xxs(width, 270px)
 	&__modal
-		// display none
+		display none
 		position fixed
 		width 810px
 		height 440px
