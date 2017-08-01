@@ -143,10 +143,12 @@ export const showForm = () => {
     const overlay = $('.overlay');
     const form = $('.request-form');
     const close = $('.request-form__close-btn');
+    const input = $('.request-form #name');
     btn.click(function (e) {
         e.preventDefault();
         form.toggleClass('hide');
         overlay.toggleClass('hide');
+        input.focus();
     });
     overlay.click(function () {
         $(this).toggleClass('hide');
