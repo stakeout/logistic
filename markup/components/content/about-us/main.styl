@@ -5,6 +5,11 @@
 	&__item
 		col()
 		size(4)
+		size-xxs(12)
+		&:not(:last-child)
+			xxs-block({
+			  margin-bottom: 30px
+			})
 		b
 			display block
 			margin-bottom 30px
@@ -12,6 +17,7 @@
 			font-size 24px
 			font-weight 300
 			line-height 36px
+			xxs(margin-bottom, 15px)
 		p
 			color $c_text
 			font-size 14px
@@ -20,13 +26,15 @@
 .our-principles
 	&__item:nth-child(n+4)
 		padding-top 60px
-
+		xxs(padding-top, 0)
 .our-team
 	&__list
 		row-flex()
+		xxs(justify-content, center)
 	&__item
 		col()
 		size(6)
+		size-xxs(10)
 		display -webkit-flex
 		display -ms-flex
 		display flex
@@ -34,14 +42,34 @@
 		min-height 320px
 		background-color #0d47a1
 		border-radius 5px
+		xxs-block({
+		  flex-direction: column
+			max-width: 80%
+			margin: 0 40px
+		})
 		&:nth-child(-n+2)
 			margin-bottom 30px
+	.slick-next
+		right 0
+	.slick-prev
+		left 0
 	&__img-wrap
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		align-items: flex-end;
 		flex-basis 46.85%
+		xxs-block({
+		  flex-basis: initial
+			width: 235px
+			height: 200px
+			justify-content: center
+		})
+		img
+			xxs-block({
+			  width: 180px
+				height: 180px
+			})
 	&__info
 		display -webkit-flex
 		display -ms-flex
@@ -52,6 +80,13 @@
 		color $c_white
 		font-weight 300
 		line-height 36px
+		xxs-block({
+			padding: 15px 10px
+			flex-basis: initial
+			color: $c_blue
+			text-align: center
+			background-color: $c_white
+		})
 		b
 			font-size 24px
 		span
@@ -62,9 +97,18 @@
 			font-size 14px
 			font-weight 300
 			line-height 36px
+			xxs(color, inherit)
 		p
 			&:first-of-type
-				margin-top auto	
+				margin-top auto
+//Жизнь в офисе
+.office-life
+	&__item
+		margin 0 20px
+	.slick-prev,
+	.slick-next
+		top calc(50% - 30px)
+		
 //Сотрудники о компании
 .workers-about-us
 	&__info

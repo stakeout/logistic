@@ -132,11 +132,13 @@ export const validation = () => {
         }
         return isValid;
     }
-    form.addEventListener('submit', function (e) {
-        if (!validationForm() && !validateCheckbox()) {
-            e.preventDefault();    // stop form from submitting
-        }
-    });
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            if (!validationForm() && !validateCheckbox()) {
+                e.preventDefault();    // stop form from submitting
+            }
+        });
+    }
 };
 export const showForm = () => {
     const btn = $('#request-btn');
