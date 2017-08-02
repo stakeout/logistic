@@ -1,6 +1,6 @@
 // Common styles of the project
 // *
-	// outline 1px solid
+// 	outline 1px solid
 html
 	box-sizing border-box
 *, *:before, *:after
@@ -41,20 +41,23 @@ ul,li,p,h1,h2,h3
 	background-repeat no-repeat
 	background-position center center
 	background-size cover
+	xxs-block({
+	  padding: 60px 0
+	})
 	h2
 		max-width 555px
 		margin-bottom 50px
 		line-height 36px
 	p
 		max-width 555px
-		margin-bottom 15px
+		margin-bottom 125px
 		color $c_white
 		font-size 14px
 		font-weight 300
 		line-height 21px
+		xxs(margin-bottom, 90px)
 	a
 		display block
-		margin-top 145px
 		font-size 14px
 		font-weight 500
 		text-transform uppercase

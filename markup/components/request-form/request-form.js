@@ -132,21 +132,25 @@ export const validation = () => {
         }
         return isValid;
     }
-    form.addEventListener('submit', function (e) {
-        if (!validationForm() && !validateCheckbox()) {
-            e.preventDefault();    // stop form from submitting
-        }
-    });
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            if (!validationForm() && !validateCheckbox()) {
+                e.preventDefault();    // stop form from submitting
+            }
+        });
+    }
 };
 export const showForm = () => {
     const btn = $('#request-btn');
     const overlay = $('.overlay');
     const form = $('.request-form');
     const close = $('.request-form__close-btn');
+    const input = $('.request-form #name');
     btn.click(function (e) {
         e.preventDefault();
         form.toggleClass('hide');
         overlay.toggleClass('hide');
+        input.focus();
     });
     overlay.click(function () {
         $(this).toggleClass('hide');

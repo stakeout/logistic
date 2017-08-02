@@ -1,15 +1,20 @@
-.european-direction
+.direction-way
 	background-image url(__static__general/bg_european_direction.png)
 	background-position top left
 	background-size cover
+	xxs(min-height, 100vh)
 	&__inner
 		padding-top 140px
+		xxs-block({
+		  padding-top: 90px
+		})
 	&__title
 		max-width 655px
 		margin-bottom 60px
 	&__list 
-		width 400px
+		max-width 400px
 		padding-bottom 70px
+		xxs(display, none)
 	&__item
 		position relative
 		min-height 42px
@@ -28,5 +33,5 @@
 			left 0
 			background-color $c_white
 .logistic-services
-	margin-top 90px
+	// margin-top 90px
 	background-image url(__static__content/services/bg-2.png)

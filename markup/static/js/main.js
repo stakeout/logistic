@@ -5,6 +5,7 @@ const jqValidation = require('jquery-validation');
 const wowJs = require('wow.js');
 import {filterByType, carousel, slickCarouselSettins} from '../../components/clients/clients';
 import {reviewsMagnificPopup, reviewsCarousel} from '../../components/reviews/reviews';
+import {ourTeamCarousel} from '../../components/content/about-us/main';
 import {map} from '../../components/map/map';
 import {stickyNav, mobileNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
@@ -16,13 +17,25 @@ $(() => {
     slickCarouselSettins();
     reviewsMagnificPopup();
     reviewsCarousel();
+    ourTeamCarousel();
     $('.office-life__list').slick({
         dots: false,
         centerMode: true,
         centerPadding: '200px',
         slidesToShow: 1,
         slidesToScroll: 1,
-        focusOnSelect: true
+        responsive: [
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: true,
+                    centerMode: false
+                }
+            }
+        ]
     });
     filterByType();
     map();

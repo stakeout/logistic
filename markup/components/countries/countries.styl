@@ -12,23 +12,31 @@
 		font-size 14px
 		line-height 21px
 		font-weight 300
+		xxs(margin-bottom, 20px)
 	&__list
 		row-flex()
 		position relative
 		max-width 850px
+		xxs(justify-content, center)
 	&__item
 		col()
+		size-xxs(6)
 		flex-basis 165px
 		padding 15px 0
 		text-align center
 		border-radius 5px
 		margin-bottom 45px
+		xxs-block({
+		  flex-basis: initial
+			margin-bottom: 0
+		})
 		img
 			display block
 			margin 0 auto
 			margin-bottom 30px
 			box-shadow 3px 0 6px rgba(0, 0, 0, 0.19)
 			border-radius 5px
+			xxs(margin-bottom, 15px)
 		span
 			color $c_text
 			font-size 14px
@@ -39,8 +47,14 @@
 			right -290px
 			max-width 290px
 			background-color transparent
+			xxs-block({
+				position: static
+				flex-basis: 100%
+				padding-top: 50px	
+			})
 			img
 				margin-bottom 50px
+				xxs(margin-bottom, 30px)
 			span
 				color #2196f3
 				font-size 18px

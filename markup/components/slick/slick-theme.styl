@@ -16,14 +16,15 @@
 	position absolute
 	top calc(50% - 60px)
 	display block
-	width 20px
-	height 20px
+	width 30px
+	height 40px
 	padding 0
 	cursor pointer
 	color transparent
 	border none
 	outline none
 	background transparent
+	z-index 20
 
 .slick-prev:hover,
 .slick-prev:focus,
@@ -62,10 +63,10 @@
 	-moz-osx-font-smoothing grayscale
 
 .slick-prev
-	left -12px
+	left -18px
 	&:before
 		content ''
-		right -7px
+		right calc(50% - 15px)
 		transform rotate(135deg)
 		
 
@@ -82,10 +83,10 @@
 			content '←'
 
 .slick-next
-	right -12px
+	right -18px
 	&:before
 		content ''
-		left -7px
+		left calc(50% - 15px)
 		transform rotate(-45deg)
 
 .slick-dotted
