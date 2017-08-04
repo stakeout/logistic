@@ -7,7 +7,7 @@ export const map = () => {
         myMap = new ymaps.Map('map', {
             center: [53.88985341, 27.53529831],
             zoom: 16,
-            controls: ['zoomControl', 'typeSelector', 'routeEditor']
+            controls: ['zoomControl']
         });
         myPlacemark = new ymaps.Placemark([53.88985341, 27.53529831], {
             hintContent: 'ТВ Логистик',
