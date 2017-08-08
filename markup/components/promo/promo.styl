@@ -1,8 +1,8 @@
 .promo
-	background-image url(%=static=%general/bg_main.png)
-	background-repeat no-repeat
-	background-position 100% center
-	background-size cover
+	// background-image url(%=static=%general/bg_main.png)
+	// background-repeat no-repeat
+	// background-position 100% center
+	// background-size cover
 	&__inner
 		display -webkit-flex
 		display -ms-flex
@@ -48,3 +48,17 @@
 	&__left-col
 		p
 			margin-bottom 15px
+	video 
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background: url('%=static=%general/bg_main.png') no-repeat;
+		background-position 100% center
+		background-size: cover;
+		transition: 1s opacity;
