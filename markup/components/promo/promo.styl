@@ -3,9 +3,8 @@
 	// background-repeat no-repeat
 	// background-position 100% center
 	// background-size cover
+	background url(__static__minified-svg/pixel.svg) repeat
 	&__inner
-		display -webkit-flex
-		display -ms-flex
 		display flex
 		flex-direction column
 		padding-top 60px
@@ -39,9 +38,8 @@
 		line-height 21px
 		text-align right
 		span
-			opacity .5
-			&:last-of-type
-				opacity 1
+			&:last-child
+				// opacity 1
 				padding-right 30px
 		p
 			margin-top 15px
@@ -62,3 +60,4 @@
 		background-position 100% center
 		background-size: cover;
 		transition: 1s opacity;
+		
