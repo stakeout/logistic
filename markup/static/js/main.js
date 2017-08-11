@@ -1,8 +1,6 @@
 import slick from 'slick-carousel';
-// const slick = require('slick-carousel');
 import magnificPopup from 'magnific-popup';
-const jqValidation = require('jquery-validation');
-const wowJs = require('wow.js');
+import wowJs from 'wow.js';
 import {filterByType, carousel, slickCarouselSettins} from '../../components/clients/clients';
 import {reviewsMagnificPopup, reviewsCarousel} from '../../components/reviews/reviews';
 import {ourTeamCarousel} from '../../components/content/about-us/main';

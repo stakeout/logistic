@@ -1,10 +1,10 @@
 mixin promo(data)
 	+b.promo
-		video#bgvid(poster='%=static=%general/bg_main.png', playsinline, autoplay, muted, loop)
-			source(src='__static__img/general/video/main_webm.webm', type='video/webm')
-			source(src='__static__img/general/video/main.mp4', type='video/mp4')
+		//- video#bgvid(poster='%=static=%general/bg_main.png', playsinline, autoplay, muted, loop)
+		//- 	source(src='__static__img/general/video/main_webm.webm', type='video/webm')
+		//- 	source(src='__static__img/general/video/main.mp4', type='video/mp4')
 		+e.inner.center
-			+e.BUTTON.request-btn.btn#request-btn Запрос на перевозку груза
+			+e.BUTTON.request-btn.btn.waves-effect.waves-light#request-btn Запрос на перевозку груза
 			+e.info
 				+e.left-col
 					p

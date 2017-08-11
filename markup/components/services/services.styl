@@ -18,6 +18,7 @@
 		font-size 14px
 		line-height 21px
 		box-sizing border-box
+		transition background-color .4s ease
 		xxs-block({
 			padding-bottom: 0
 			padding-top: 30px
@@ -26,10 +27,10 @@
 			font-size: 12px
 		})
 		&:not(:last-child)
-			border-right 2px solid #e8eaf6
+			border-right 1px solid #e8eaf6
 			xxs(border-right, none)
 		&:nth-child(odd)
-			xxs(border-right, 2px solid #e8eaf6)
+			xxs(border-right, 1px solid #e8eaf6)
 		&:hover
 			background $c_light-blue
 		b 
