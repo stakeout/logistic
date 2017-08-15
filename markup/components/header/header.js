@@ -14,11 +14,15 @@ export const stickyNav = () => {
         if ($(this).scrollTop() > 75) {
             $($header).addClass('stick');
             $($logoImg).attr('src', 'static/img/general/logo_blue.svg');
+            $($logoImg).attr('width', '40');
+            $($logoImg).attr('height', '40');
             $($links).addClass('stick');
             $($lang).addClass('stick');
             $($navToggle).addClass('stick');
         } else {
             $($logoImg).attr('src', 'static/img/general/logo_white.svg');
+            $($logoImg).attr('width', '50');
+            $($logoImg).attr('height', '50');
             $($header).removeClass('stick');
             $($links).removeClass('stick');
             $($lang).removeClass('stick');
