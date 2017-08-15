@@ -151,6 +151,7 @@ export const showForm = () => {
         form.toggleClass('hide');
         overlay.toggleClass('hide');
         input.focus();
+        input.blur();
     });
     overlay.click(function () {
         $(this).toggleClass('hide');

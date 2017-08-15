@@ -1,22 +1,33 @@
 .about-us
+	position relative
 	background-color $c_white
 	&_page &__top-row
 			min-height 100vh
 	&__top-row
-		background-image url(__static__content/team.png)
-		background-repeat no-repeat
-		background-position center center
-		background-size cover
+		// background-image url(__static__content/people_company.png)
+		// background-repeat no-repeat
+		// background-position center
+		// background-size cover
+		img
+			width 100%
+			position absolute
+			height 35vw
+			xxs-block({
+			  height: 100vw
+			})
 	&__inner
+		position relative
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-wrap wrap
-		height 900px
-		padding-top 80px
+		height 35vw
+		padding-top 40px
 		padding-bottom 80px
+		z-index 2
 		xxs-block({
-			height: 500px
+			height: 100vw
+			padding-bottom: 30px
 		})
 	&__list
 		row-flex()
