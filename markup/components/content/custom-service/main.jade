@@ -7,30 +7,32 @@ include ../../additional-services/additional-services
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
-			+full-viewport-width(services.aviatransportation)
-			p.text.center Компания ООО “ТВ Логистик” осуществляет срочные авиаперевозки грузов в любую точку миру. 
-				|Нашим клиентам мы гарантируем полную сохранность груза, в том числе хрупкого и скоропортящегося, его своевременную доставку, оговоренную по договору. При этом мы берем на себя все заботы о таможенном оформлении, заполнении транспортных накладных, иной документации. 
-				|Строгий контроль и полная ответственность с нашей стороны обеспечит полное соответствие авиаперевозок международным и отечественным правилам к данному виду услуг. Постоянный мониторинг груза обеспечит надежность оказываемых нами услуг, которые мы уже более 5 лет предлагаем нашим клиентам, которым нужно быстро доставить вещи, товары, стройматериалы, корреспонденцию грузовыми авиаперевозчиками по всему миру.
+			+full-viewport-width(services.custom)
+			p.text.center Профессиональная помощь специалистов позволит избежать задержек на таможне, сэкономить драгоценное время и денежные средства. Мы предлагаем следующие услуги по таможенному оформлению грузов:
+			ul.content-list.center
+				li Предварительное консультирование:
+					ul.sub-list
+						li требование к внешнеторговым контрактам;
+						li классификация грузов в соответствии с товарной номенклатурой внешнеэкономической деятельности (в том числе подбор кодов).
+				li Предоставление необходимой информации о величине таможенной пошлины:
+					ul.sub-list
+						li предварительный расчет сумм таможенных платежей;
+						li размер ставки таможенной пошлины и НДС;
+						li подготовка необходимых документов для таможенного оформления, получение разрешений и сертификатов.
+				li Инструкции по заполнению всех товаросопроводительных документов (TIR, Carnet ATA, CMR, ЕХ1, Т1, T2, гарантийное обеспечение);
+				li Общее консультирование в вопросах таможенного оформления и решение любых нестандартных ситуаций, связанных с перевозкой и сопровождением груза.
 			+b.SECTION.service-advantages
 				+e.inner.center
 					+e.H2.title.heading._h2 Преимущества сервиса
 					+e.UL.list
 						+e.LI.item
 							+svg('plane',60,60)
-							b Профессионализм специалистов и внушительный опыт работы
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							b Высокий уровень сервиса
+							p.text Все возможные трудности в перевозке стараемся предусмотреть на стадии планирования отгрузки, так как все сотрудник имеют большой опыт работы в организации международных грузоперевозок.
 						+e.LI.item
 							+svg('plane',60,60)
-							b Профессионализм специалистов и внушительный опыт работы
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						+e.LI.item
-							+svg('plane',60,60)
-							b Профессионализм специалистов и внушительный опыт работы
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						+e.LI.item
-							+svg('plane',60,60)
-							b Профессионализм специалистов и внушительный опыт работы
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							b Наши сотрудники
+							p.text Штат компании состоит из опытных высококвалифицированных специалистов, имеющих необходимые сертификаты, лицензии для осуществления и организации транспортировки.
 			+b.SECTION.progress
 				+e.inner.center
 					+e.H2.title.heading._h2 Ход выполнения

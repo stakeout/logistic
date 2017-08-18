@@ -83,6 +83,33 @@ ul,li,p,h1,h2,h3
 	font-weight 300
 	&_white
 		color $c_white
+.content-list
+	& > li
+		position relative
+		padding-left 15px
+		color $c_text
+		font-size 14px
+		line-height 21px
+		font-weight 300
+		&:not(:last-child)
+			margin-bottom 10px
+		&:before
+			position absolute
+			left 0
+			content '•'
+			color $c_blue
+			font-size 24px
+	.sub-list
+		li
+			position relative
+			padding-left 20px
+			margin-top 10px
+			&:before
+				position absolute
+				content '•'
+				left 0
+				font-size 18px
+				
 .btn
 	display inline-block
 	vertical-align top
