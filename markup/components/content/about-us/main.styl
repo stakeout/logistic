@@ -39,7 +39,7 @@
 		display -ms-flex
 		display flex
 		justify-content: space-between;
-		min-height 320px
+		min-height 270px
 		background-color #0d47a1
 		border-radius 5px
 		xxs-block({
@@ -47,7 +47,7 @@
 			max-width: 80%
 			margin: 0 40px
 		})
-		&:nth-child(-n+2)
+		&:not(:nth-last-child(-n+1))
 			margin-bottom 30px
 			xxs(margin-bottom, 0)
 	.slick-next
@@ -113,8 +113,8 @@
 //Сотрудники о компании
 .workers-about-us
 	&__info
-		height 440px
-		background-image url(__static__content/about-us-bottom-bg.png)
+		height 575px
+		background-image url(__static__content/our-team/people_about_company.png)
 		background-repeat no-repeat
 		background-position center center
 		background-size cover
