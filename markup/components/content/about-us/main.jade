@@ -178,16 +178,18 @@ mixin main()
 				+e.inner.center
 					+e.H2.title.heading._h2 Жизнь в офисе
 					+e.UL.list
-						+e.LI.item
-							img(src='__static__img/content/43846911_ml.png' width='688' height='460')
-						+e.LI.item
-							img(src='__static__img/content/43846911_ml.png' width='688' height='460')
-						+e.LI.item
-							img(src='__static__img/content/43846911_ml.png' width='688' height='460')
-						+e.LI.item
-							img(src='__static__img/content/43846911_ml.png' width='688' height='460')
-						+e.LI.item
-							img(src='__static__img/content/43846911_ml.png' width='688' height='460')
+						- var arr = ['IMG_4712.jpg','IMG_4516.jpg','IMG_4625.jpg','IMG_4596.jpg','IMG_4532.jpg','IMG_4851.jpg','IMG_4595.jpg','IMG_4527-2.jpg','IMG_4316.jpg','IMG_4354.jpg','IMG_4410.jpg','IMG_4162.jpg','IMG_4344.jpg','IMG_4329.jpg','IMG_4348.jpg','IMG_4174.jpg','IMG_4165.jpg']
+						- for(i=0; i < arr.length; i++)
+							+e.LI.item
+								img(src='__static__img/content/our-team/office-life/#{arr[i]}' width='688' height='460')
+						//- +e.LI.item
+						//- 	img(src='__static__img/content/43846911_ml.png' width='688' height='460')
+						//- +e.LI.item
+						//- 	img(src='__static__img/content/43846911_ml.png' width='688' height='460')
+						//- +e.LI.item
+						//- 	img(src='__static__img/content/43846911_ml.png' width='688' height='460')
+						//- +e.LI.item
+						//- 	img(src='__static__img/content/43846911_ml.png' width='688' height='460')
 			+b.SECTION.workers-about-us
 				+e.inner.center
 					+e.H2.title.heading._h2 Сотрудники о компании
