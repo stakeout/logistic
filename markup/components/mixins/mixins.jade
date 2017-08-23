@@ -1,6 +1,9 @@
 mixin svg(name,width,height)
-	+e.SVG(class='icon_#{name}' width= width + 'px', height= height + 'px')
+	+e.SVG(class='icon_#{name}' width= width, height= height)
 		use(xlink:href='static/img/svg-symbols.svg#' +name)
+mixin svg2(obj)
+	+e.SVG(class='icon_#{obj.name}' width='#{obj.width}', height='#{obj.height}')
+		use(xlink:href='static/img/#{obj.path}#{obj.name}.svg')
 mixin input(type,checked)
 	if checked
 		input(class='class' name='name' type= type checked)
