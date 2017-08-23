@@ -3,6 +3,7 @@ include ../../map-large/map-large
 include ../../reviews/reviews
 include ../../clients/clients
 include ../../map/map
+include ../../solutions/solutions
 include ../../additional-services/additional-services
 mixin main()
 	+b.MAIN.page-content
@@ -62,34 +63,7 @@ mixin main()
 							span Америка
 							p Грузоперевозки сборных и комплектных грузов, экспорт и иморт из России в Беларусь и в Беларусь из&nbsp;России
 			+map-large
-			+b.SECTION.cargo-types
-				+e.inner.center
-					+e.H2.title.heading._h2 виды перевозимых грузов
-					+e.UL.list
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
-						+e.LI.item
-							+svg('plane',90,60)
-							p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ab.
+			+solutions(solutions)
 			+b.SECTION.about-specialist._1
 				+e.inner.center
 					+e.info
