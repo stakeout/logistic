@@ -8,7 +8,8 @@
 		position relative
 		padding-left 120px
 		xxs-block({
-		  padding-left: 100px
+		  padding-left: 0
+			padding-top: 80px
 		})
 		&:not(:nth-last-child(-n+2))
 			margin-bottom 60px
@@ -26,10 +27,15 @@
 			font-size 18px
 			line-height 26px
 			font-weight 300
-			xxs(margin-bottom, 10px)
+			xxs(margin-bottom, 20px)
 	&__icon
 		position absolute
 		left 0
+		xxs-block({
+			top: 0
+			left: calc(50% - 30px)
+		})
+		
 //Ход выполнения
 .progress
 	margin-bottom 90px
@@ -38,14 +44,14 @@
 	&__item
 		col()
 		size(3)
-		size-xxs(6)
+		size-xxs(12)
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-direction column
 		align-items center
 		text-align center
-		&:not(:nth-last-child(-n+2))
+		&:not(:nth-last-child(-n+1))
 			xxs-block({
 				margin-bottom: 60px
 			})
@@ -83,54 +89,112 @@
 //О специалисте
 .about-specialist
 	&_1
-		background url(__static__content/services/1/people.png) no-repeat calc(50% - 400px) bottom,
-							#0d47a1	url(__static__content/services/1/pattern.svg) repeat;
+		background url(__static__content/services/1/people.png) no-repeat calc(50% - 320px) bottom,
+							#0d47a1	url(__static__content/services/1/pattern.svg) repeat
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/1/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/1/pattern.svg) repeat
+			background-size 100% auto, auto
 	&_2
-		background url(__static__content/services/2/people.png) no-repeat calc(50% - 400px) bottom,
-							#0d47a1	url(__static__content/services/2/pattern.svg) repeat;
+		background url(__static__content/services/2/people.png) no-repeat calc(50% - 320px) bottom,
+							#0d47a1	url(__static__content/services/2/pattern.svg) repeat
+		@media screen and (max-width: 420px)
+			background: url(__static__content/services/2/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/2/pattern.svg) repeat
+			background-size: 100% auto, auto
 	&_3
-		background url(__static__content/services/3/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/3/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/3/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/3/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/3/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_4
-		background url(__static__content/services/4/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/4/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/4/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/4/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/4/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_5
-		background url(__static__content/services/5/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/5/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/5/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/5/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/5/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_6
-		background url(__static__content/services/6/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/6/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/6/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/6/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/6/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_7
-		background url(__static__content/services/7/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/7/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/7/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/7/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/7/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_8
-		background url(__static__content/services/8/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/8/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/8/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/8/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/8/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_9
-		background url(__static__content/services/9/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/9/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/9/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/9/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/9/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_10
-		background url(__static__content/services/10/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/10/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/10/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/10/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/10/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_11
-		background url(__static__content/services/11/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/11/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/11/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/11/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/11/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&_12
-		background url(__static__content/services/12/people.png) no-repeat calc(50% - 400px) bottom,
+		background url(__static__content/services/12/people.png) no-repeat calc(50% - 320px) bottom,
 							#0d47a1	url(__static__content/services/12/pattern.svg) repeat;
+		@media screen and (max-width: 420px)
+			background url(__static__content/services/12/people.png) no-repeat center bottom,
+									#0d47a1	url(__static__content/services/12/pattern.svg) repeat;
+			background-size 100% auto, auto
 	&__inner
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		justify-content: flex-end;
 		min-height 65vh
-		padding 90px 0
+		padding-top 90px
+		padding-bottom 90px
+		xxs-block({
+			justify-content: center
+			padding-top: 60px
+			padding-bottom: 30px
+			min-height: 85vh
+		})
 	&__info
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-direction column
 		flex-basis 50%
+		xxs-block({
+			flex-basis: 100%
+		})
 		b
 			margin-bottom 30px
 			color $c_white
@@ -138,11 +202,20 @@
 			line-height 21px
 			font-weight 500
 			text-transform uppercase
+			xxs-block({
+			  margin-bottom: 0
+			})
 		p
 			margin-bottom 100px
+			xxs(display, none)
 	&__title
 		margin-bottom 60px
+		xxs(margin-bottom, 30px)
 	&__link
 		margin-top auto
 		font-weight 500
+		xxs-block({
+			margin-left: auto
+			margin-right: auto
+		})
 		
