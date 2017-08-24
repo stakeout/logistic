@@ -1,7 +1,16 @@
 .direction-way
-	background-image url(__static__general/bg_european_direction.png)
-	background-position top left
-	background-size cover
+	&_europe
+		background url(__static__content/europe/europe.png) no-repeat top left
+		background-size cover
+	&_asia
+		background url(__static__content/azian/asia.png) no-repeat top left
+		background-size cover
+	&_russia
+		background url(__static__content/russian/russia.png) no-repeat top left
+		background-size cover
+	&_america
+		background url(__static__content/america/america.png) no-repeat top left
+		background-size cover
 	xxs(min-height, 100vh)
 	&__inner
 		padding-top 140px
@@ -24,14 +33,16 @@
 		font-size 14px
 		line-height 21px
 		font-weight 300
-		&:before
-			position absolute
-			content ''
-			width 30px
-			height 30px
-			top 3px
-			left 0
-			background-color $c_white
+		background-repeat no-repeat
+		background-size 28px 28px
+		&:first-child
+			background-image url(__static__minified-svg/small-icon-1.svg)
+		&:nth-child(2)
+			background-image url(__static__minified-svg/small-icon-2.svg)
+		&:nth-child(3)
+			background-image url(__static__minified-svg/small-icon-3.svg)
+		&:last-child
+			background-image url(__static__minified-svg/small-icon-4.svg)
 .logistic-services
 	// margin-top 90px
 	background-image url(__static__content/services/bg-2.png)

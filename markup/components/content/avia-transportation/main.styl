@@ -4,10 +4,21 @@
 	&__item
 		col()
 		size(6)
+		size-xxs(12)
 		position relative
 		padding-left 120px
+		xxs-block({
+		  padding-left: 100px
+		})
 		&:not(:nth-last-child(-n+2))
 			margin-bottom 60px
+			xxs-block({
+				margin-bottom: 30px
+			})
+		&:not(:nth-last-child(1))
+			xxs-block({
+			  margin-bottom: 30px
+			})
 		b
 			display block
 			margin-bottom 30px
@@ -15,6 +26,7 @@
 			font-size 18px
 			line-height 26px
 			font-weight 300
+			xxs(margin-bottom, 10px)
 	&__icon
 		position absolute
 		left 0
@@ -26,12 +38,17 @@
 	&__item
 		col()
 		size(3)
+		size-xxs(6)
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-direction column
 		align-items center
 		text-align center
+		&:not(:nth-last-child(-n+2))
+			xxs-block({
+				margin-bottom: 60px
+			})
 		b
 			color #36c
 			font-size 18px
@@ -39,6 +56,7 @@
 			font-weight 300
 		img
 			margin-bottom 60px
+			xxs(margin-bottom, 20px)
 //Наши направления
 .directions-list
 	background-color $c_blue
