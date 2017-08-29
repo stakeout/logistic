@@ -1,5 +1,7 @@
+include ../request-form/request-form
 mixin page()
 	+b('body').page&attributes(attributes)
 		+e.inner
 			block
+		+request-form
 		.overlay.hide
