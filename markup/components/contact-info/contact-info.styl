@@ -21,8 +21,19 @@
 		padding-bottom 30px
 	&_left &__item:last-child
 		margin-bottom 0
+	&_mobil
+		display none
+		width 100%
+		position relative
+		padding-bottom 0
+		xxs-block({
+		  display: block
+		})
 	&__item
 		margin-bottom 30px
+		xxs-block({
+		  margin-bottom: 15px
+		})
 		svg
 			display inline-block
 			vertical-align middle
