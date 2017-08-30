@@ -10,7 +10,7 @@ export const map = () => {
             controls: []
         });
         myPlacemark = new ymaps.Placemark([53.88985341, 27.53529831], {
-            hintContent: 'ТВ Логистик',
+            hintContent: 'ТВ Логистик'
         }, {
             iconLayout: 'default#image',
             iconImageHref: 'static/img/minified-svg/blue_map_marker.svg',
@@ -23,6 +23,7 @@ export const map = () => {
                 bottom: 50,
                 right: 10
             }
+
         });
         myMap.geoObjects.add(myPlacemark);
         myMap.behaviors.disable('scrollZoom');

@@ -46,6 +46,7 @@
 		  flex-direction: column
 			max-width: 80%
 			margin: 0 40px
+			background: transparent
 		})
 		&:not(:nth-last-child(-n+2))
 			margin-bottom 30px
@@ -60,11 +61,12 @@
 		display flex
 		align-items: flex-end;
 		flex-basis 46.85%
-		xxs-block({
+		xxs-block(@block{
 		  flex-basis: initial
-			width: 235px
 			height: 200px
 			justify-content: center
+			background: #0d47a1 url(__static__content/our-team/logo_pattern.svg) no-repeat
+			border-radius: 5px
 		})
 		img
 			xxs-block({
@@ -84,14 +86,19 @@
 		xxs-block({
 			padding: 15px 10px
 			flex-basis: initial
-			color: $c_blue
+			color: $c_text
 			text-align: center
 			background-color: $c_white
 		})
 		b
 			font-size 24px
+			font-weight 500
+			xxs-block(@block{
+			  color: $c_blue
+			})
 		span
 			font-size 14px
+			line-height 21px
 		a
 			padding-left 30px
 			color $c_white
@@ -100,6 +107,9 @@
 			line-height 36px
 			xxs(color, inherit)
 		p
+			xxs-block(@block{
+				text-align justify
+			})
 			&:first-of-type
 				margin-top auto
 //Жизнь в офисе
