@@ -21,4 +21,7 @@ mixin online-services(data)
 					span Отслеживание воздушных судов
 		+e.modal
 			+e.H2.title._modal Движение и позиции судов
-			+e.modal-content
+			a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+			script.
+				var _avtdq = [["language", "ru"], ["width", '100%']];
+			script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
