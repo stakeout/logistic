@@ -7,7 +7,9 @@ import {ourTeamCarousel} from '../../components/content/about-us/main';
 import {map} from '../../components/map/map';
 import {stickyNav, mobileNav} from '../../components/header/header';
 import {validation, showForm} from '../../components/request-form/request-form';
+import {modalVacancies} from '../../components/vacancies/vacancies';
 $(() => {
+    modalVacancies();
     stickyNav();
     mobileNav();
     showForm();

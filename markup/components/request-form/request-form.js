@@ -155,7 +155,7 @@ export const showForm = () => {
     });
     overlay.click(function () {
         $(this).toggleClass('hide');
-        form.toggleClass('hide');
+        form.removeClass('hide');
     });
     close.click(function () {
         form.toggleClass('hide');
