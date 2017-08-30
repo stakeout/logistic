@@ -1,8 +1,10 @@
 include ../../map/map
+include ../../contact-info/contact-info
 include ../../contact-form/contact-form
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
 			+b.top-overlay
 			+map({modifier: 'left'})
+			+contact-info({modifier: 'mobil'})
 			+contact-form
