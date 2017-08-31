@@ -5,11 +5,17 @@ include ../../clients/clients
 include ../../map/map
 include ../../solutions/solutions
 include ../../additional-services/additional-services
+include ../../video/video
 mixin main()
 	+b.MAIN.page-content
+		+video({
+			bgPath: '__static__general/bg_main.png',
+			videoPath: '__static__/img/general/video/temperature.mp4'
+		})
 		+e.inner
 			+full-viewport-width(services.temperature)
-			p.text.center Для каждого груза предусмотрен свой температурный режим и правила, при соблюдении которых, грузоперевозка будет безопасной. В качестве транспорта используются рефрижераторы, рефконтейнеры, цистерны с температурным режимом. Осуществляем превозки сборных температурных  грузов.
+			.content
+				p.text.center Для каждого груза предусмотрен свой температурный режим и правила, при соблюдении которых, грузоперевозка будет безопасной. В качестве транспорта используются рефрижераторы, рефконтейнеры, цистерны с температурным режимом. Осуществляем превозки сборных температурных  грузов.
 			+b.SECTION.service-advantages
 				+e.inner.center
 					+e.H2.title.heading._h2 Преимущества сервиса

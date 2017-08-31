@@ -31,6 +31,8 @@
 	&__list
 		row-flex()
 		justify-content: space-between;
+		.hidden
+			display none
 	&__item
 		col()
 		size(2)
@@ -71,11 +73,17 @@
 				text-align: center
 			})
 	&__modal
-		// display none
-		position fixed
-		top calc(50% - 400px)
+		position absolute
+		top 10%
 		left calc(50% - 375px)
 		width 750px
-		padding 60px
+		padding 30px
 		background-color $c_white
 		z-index 1002
+		border-radius 5px
+		xxs-block(@block{
+			width 90%
+			left calc(50% - 45%)
+			top calc(50% - 25%)
+			padding 20px
+		})

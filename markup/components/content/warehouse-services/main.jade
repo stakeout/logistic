@@ -5,8 +5,13 @@ include ../../clients/clients
 include ../../map/map
 include ../../solutions/solutions
 include ../../additional-services/additional-services
+include ../../video/video
 mixin main()
 	+b.MAIN.page-content
+		+video({
+			bgPath: '__static__general/bg_main.png',
+			videoPath: '__static__/img/general/video/scladskie_uslugi.mp4'
+		})
 		+e.inner
 			+full-viewport-width(services.warehouse)
 			p.text.center В логистике склад выполняет функцию аккумулирования резервов материальных ресурсов, необходимых для демпфирования колебаний объёмов поставок и спроса, а также синхронизации скоростей потоков товаров в системах продвижения от изготовителей к потребителям или потоков материалов в технологических производственных системах.

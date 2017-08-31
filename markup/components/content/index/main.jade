@@ -6,6 +6,7 @@ include ../../clients/clients
 include ../../reviews/reviews
 include ../../map/map
 include ../../map-large/map-large
+include ../../request-form/request-form
 mixin main()
 	+b.MAIN.page-content
 		+e.inner
@@ -17,3 +18,4 @@ mixin main()
 			+clients
 			+reviews
 			+map({modifier: 'right'})
+			+request-form

@@ -1,0 +1,4 @@
+mixin video(data)
+	video#bgvid(poster='#{data.bgPath}', playsinline, autoplay, muted, loop)
+		//- source(src='__static__img/general/video/main_webm.webm', type='video/webm')
+		source(src='#{data.videoPath}', type='video/mp4')

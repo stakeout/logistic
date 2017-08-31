@@ -3,7 +3,7 @@ export const modalVacancies = () => {
     const overlay = document.querySelector('.overlay');
     const vacancyBtn = document.querySelector('.vacancies-btn');
     const modalContent = document.querySelector('.wrapper');
-    const modalInfo = document.querySelector('#modal-info');
+    const modalInfo = document.querySelector('.vacancies__modal-info');
     const popupForm = document.querySelector('.vacancies__modal');
 
     function modal(e) {

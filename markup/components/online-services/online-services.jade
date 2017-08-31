@@ -3,25 +3,46 @@ mixin online-services(data)
 		+e.inner.center
 			+e.H2.title Онлайн-сервисы
 			+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			+e.list
-				+e.A.item(href='#')
+			+e.UL.list
+				+e.LI.item
 					+svg('online-service1',90,60)
 					span Расстояние между городами
-				+e.A.item(href='#')
+					.hidden
+						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						script.
+							var _avtdq = [["language", "ru"], ["width", '100%']];
+						script(src='https://www.avtodispetcher.ru/distance/export/frame.js')
+				+e.LI.item
 					+svg('online-service2',90,60)
 					span Движение и позиции судов
-				+e.A.item(href='#')
+					.hidden
+						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						script.
+							var _avtdq = [["language", "ru"], ["width", '100%']];
+						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+				+e.LI.item
 					+svg('online-service3',90,60)
 					span Расчет загрузки транспортного средства
-				+e.A.item(href='#')
+					.hidden
+						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						script.
+							var _avtdq = [["language", "ru"], ["width", '100%']];
+						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+				+e.LI.item
 					+svg('online-service4',90,60)
 					span Поиск и отслеживание контенейров
-				+e.A.item(href='#')
+					.hidden
+						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						script.
+							var _avtdq = [["language", "ru"], ["width", '100%']];
+						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+				+e.LI.item
 					+svg('online-service5',90,60)
 					span Отслеживание воздушных судов
-		+e.modal
-			+e.H2.title._modal Движение и позиции судов
-			a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-			script.
-				var _avtdq = [["language", "ru"], ["width", '100%']];
-			script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+					.hidden
+						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						script.
+							var _avtdq = [["language", "ru"], ["width", '100%']];
+						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+		+e.modal.hide
+			.wrap

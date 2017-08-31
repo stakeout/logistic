@@ -1,6 +1,6 @@
 export const map = () => {
-    const map = document.querySelector('#map');
-    if (map) {
+    const mapbox = document.querySelector('#map');
+    if (mapbox) {
         ymaps.ready(init);
         let myMap,
             myPlacemark;

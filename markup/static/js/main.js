@@ -6,14 +6,15 @@ import {reviewsMagnificPopup, reviewsCarousel} from '../../components/reviews/re
 import {ourTeamCarousel} from '../../components/content/about-us/main';
 import {map} from '../../components/map/map';
 import {stickyNav, mobileNav} from '../../components/header/header';
-import {validation, showForm} from '../../components/request-form/request-form';
+import {showForm} from '../../components/request-form/request-form';
 import {modalVacancies} from '../../components/vacancies/vacancies';
+import {modalOnlineServices} from '../../components/online-services/online-services';
 $(() => {
+    modalOnlineServices();
     modalVacancies();
     stickyNav();
     mobileNav();
     showForm();
-    validation();
     slickCarouselSettins();
     reviewsMagnificPopup();
     reviewsCarousel();
