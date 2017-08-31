@@ -6,6 +6,7 @@ include ../../map/map
 include ../../solutions/solutions
 include ../../additional-services/additional-services
 include ../../video/video
+include ../../request-form/request-form
 mixin main()
 	+b.MAIN.page-content
 		+video({
@@ -84,3 +85,4 @@ mixin main()
 			+clients
 			+additional-services
 			+map({modifier: 'right'})
+			+request-form

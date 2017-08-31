@@ -16,10 +16,9 @@ mixin online-services(data)
 					+svg('online-service2',90,60)
 					span Движение и позиции судов
 					.hidden
-						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						script.
-							var _avtdq = [["language", "ru"], ["width", '100%']];
-						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+						script(type='text/javascript').
+							width='100%';
+						script(type='text/javascript', src='//www.marinetraffic.com/js/embed.js')
 				+e.LI.item
 					+svg('online-service3',90,60)
 					span Расчет загрузки транспортного средства
