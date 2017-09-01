@@ -1,12 +1,87 @@
 .service-type
 	background: url(__static__minified-svg/pixel.svg) repeat
+	xxs-block(@block{
+	  background transparent
+	})
+	&_truck
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/truck-transportation_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_rail
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/rail-transportation_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_avia
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/avia-transportations_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_sea
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/sea-transportation_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_multimodal
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/multimodal-transportation_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_modular
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/modular-cargo_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_custom
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/custom-service_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_warehouse
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/warehouse-services_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_oversized
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/oversized-cargo_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_dangerous
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/dangerous-cargo-transportation_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_insurance
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/additional-insuranse_mob_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
+	&_temperature
+		xxs-block(@block{
+			background-image url(__static__general/mobile-bg/transportation-of-temperature-sensitive-cargos_bg.png)
+			background-repeat no-repeat
+			background-size cover
+		})
 	&__inner
 		display -webkit-flex
 		display -ms-flex
 		display flex
 		flex-direction column
 		min-height 100vh
-		padding-top 130px
+		padding-top 200px
 		padding-bottom 190px
 	&__title
 		margin-top auto
