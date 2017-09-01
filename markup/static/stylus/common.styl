@@ -20,6 +20,14 @@ ul
 ul,li,p,h1,h2,h3
 	margin 0
 	padding 0
+.style
+	background-color $c_white
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+	&:hover
+		background-color $c_light-blue
+		box-shadow: 0 1px 3px rgba(0,0,0,.19)
+		transition all .35s ease
 .heading
 	text-transform uppercase
 	&_h1
@@ -109,7 +117,6 @@ ul,li,p,h1,h2,h3
 				content '•'
 				left 0
 				font-size 18px
-				
 .btn
 	display inline-block
 	vertical-align top

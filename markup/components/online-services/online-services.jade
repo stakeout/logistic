@@ -4,7 +4,7 @@ mixin online-services(data)
 			+e.H2.title Онлайн-сервисы
 			+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			+e.UL.list
-				+e.LI.item
+				+e.LI.item.style
 					+svg('online-service1',90,60)
 					span Расстояние между городами
 					.hidden
@@ -12,14 +12,14 @@ mixin online-services(data)
 						script.
 							var _avtdq = [["language", "ru"], ["width", '100%']];
 						script(src='https://www.avtodispetcher.ru/distance/export/frame.js')
-				+e.LI.item
+				+e.LI.item.style
 					+svg('online-service2',90,60)
 					span Движение и позиции судов
 					.hidden
 						script(type='text/javascript').
 							width='100%';
 						script(type='text/javascript', src='//www.marinetraffic.com/js/embed.js')
-				+e.LI.item
+				+e.LI.item.style
 					+svg('online-service3',90,60)
 					span Расчет загрузки транспортного средства
 					.hidden
@@ -27,7 +27,7 @@ mixin online-services(data)
 						script.
 							var _avtdq = [["language", "ru"], ["width", '100%']];
 						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
-				+e.LI.item
+				+e.LI.item.style
 					+svg('online-service4',90,60)
 					span Поиск и отслеживание контенейров
 					.hidden
@@ -35,7 +35,7 @@ mixin online-services(data)
 						script.
 							var _avtdq = [["language", "ru"], ["width", '100%']];
 						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
-				+e.LI.item
+				+e.LI.item.style
 					+svg('online-service5',90,60)
 					span Отслеживание воздушных судов
 					.hidden
