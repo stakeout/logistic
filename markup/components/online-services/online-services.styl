@@ -1,7 +1,10 @@
 .online-services
-	background-image url(%=static=%general/bg_online-services.png)
+	background-image url(%=static=%general/online-services/bg_online-services.png)
 	background-repeat no-repeat
-	background-size cover
+	background-size 100%
+	xxs-block(@block{
+		background-image url(%=static=%general/online-services/bg_online-services_mob.png)
+	})
 	&__inner
 		display -webkit-flex
 		display -ms-flex

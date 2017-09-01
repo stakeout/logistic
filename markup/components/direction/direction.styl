@@ -1,8 +1,11 @@
 .direction
-	background-image url(%=static=%general/bg_direction.png)
+	background-image url(%=static=%general/direction/bg_direction.png)
 	background-repeat no-repeat
-	// background-position 100% center
+	background-position center
 	background-size cover
+	xxs-block(@block{
+		background-image url(%=static=%general/direction/bg_direction_mob.png)
+	})
 	&__inner
 		display -webkit-flex
 		display -ms-flex

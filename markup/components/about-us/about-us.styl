@@ -4,10 +4,13 @@
 	&_page &__top-row
 			min-height 100vh
 	&__top-row
-		background-image url(__static__content/people_company.png)
+		background-image url(__static__general/about-us/people_company.png)
 		background-repeat no-repeat
 		background-position center
 		background-size cover
+		xxs-block(@block{
+			background-image url(__static__general/about-us/people_company_mob.png)
+		})
 		img
 			width 100%
 			position absolute

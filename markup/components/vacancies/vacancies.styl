@@ -1,7 +1,10 @@
 .vacancies
-	background-image url(%=static=%general/bg_vacancies.png)
+	background-image url(%=static=%general/vacancies/bg_vacancies.png)
 	background-repeat no-repeat
-	background-size cover
+	background-size 100%
+	xxs-block(@block{
+		background-image url(%=static=%general/vacancies/bg_vacancies_mob.png)
+	})
 	&__inner
 		display -webkit-flex
 		display -ms-flex
