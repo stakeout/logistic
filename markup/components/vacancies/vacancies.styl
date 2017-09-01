@@ -111,6 +111,48 @@
 		label
 			position relative
 			width 100%
+		::-webkit-input-placeholder
+			color $c_text
+			opacity .5
+		::-moz-placeholder
+			color $c_text
+			opacity .5
+		:-moz-placeholder
+			color $c_text
+			opacity .5
+		:-ms-input-placeholder
+			color $c_text
+			opacity .5
+		input:focus, textarea:focus
+			background-color: #e8eaf6
+			transition all .2s ease
+			&::-webkit-input-placeholder
+				text-indent: 700px
+				transition: text-indent 1s ease-in
+			&::-moz-placeholder
+				text-indent: 700px
+				transition: text-indent 1s ease-in
+			&:-moz-placeholder
+				text-indent: 700px
+				transition: text-indent 1s ease-in
+			&:-ms-input-placeholder
+				text-indent: 700px
+				transition: text-indent 1s ease-in
+		textarea:focus
+			background-color: #e8eaf6
+			transition all .2s ease
+			&::-webkit-input-placeholder
+				line-height: 300px
+				transition: line-height 1s ease-in
+			&::-moz-placeholder
+				line-height: 300px
+				transition: line-height 1s ease-in
+			&:-moz-placeholder
+				line-height: 300px
+				transition: line-height 1s ease-in
+			&:-ms-input-placeholder
+				line-height: 300px
+				transition: line-height 1s ease-in
 		input, textarea
 			width 100%
 			margin-bottom 30px
@@ -122,13 +164,14 @@
 			line-height 24px
 			background-color #e8eaf6
 			border none
-			outline none
 			border-radius 5px
 			resize none
-		::-webkit-input-placeholder
-			color #455a64
+			&:hover
+				background-color: #f3f4fa
+				transition all .2s ease
 		textarea
 			min-height 210px
+			overflow hidden
 		svg
 			position absolute
 			top 14px

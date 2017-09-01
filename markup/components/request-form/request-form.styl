@@ -87,6 +87,38 @@
 				&:hover
 					background-color: #f3f4fa
 					transition all .2s ease
+		textarea
+			overflow hidden
+			&::-webkit-input-placeholder
+					color $c_text
+					opacity .5
+			&::-moz-placeholder
+					color $c_text
+					opacity .5
+			&:-moz-placeholder
+					color $c_text
+					opacity .5
+			&:-ms-input-placeholder
+					color $c_text
+					opacity .5
+			&:focus
+				background-color: #e8eaf6
+				transition all .2s ease
+				&::-webkit-input-placeholder
+					line-height: 100px
+					transition: line-height 0.5s ease
+				&::-moz-placeholder
+					line-height: 100px
+					transition: line-height 0.5s ease
+				&:-moz-placeholder
+					line-height: 100px
+					transition: line-height 0.5s ease
+				&:-ms-input-placeholder
+					line-height: 100px
+					transition: line-height 0.5s ease
+			&:hover
+				background-color: #f3f4fa
+				transition all .2s ease
 	&__icon
 		position absolute
 		top calc(50% - 12px)
