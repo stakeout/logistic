@@ -7,12 +7,17 @@
   "dependencies": {
     "babel-preset-es2015": "^6.22.0",
     "bemto.jade": "^1.0.3",
+    "buffer-shims": "^1.0.0",
     "jade-injected": "^1.0.2",
     "jquery": "^3.2.1",
     "jquery-validation": "^1.16.0",
+    "lru-cache": "^4.1.1",
     "magnific-popup": "^1.1.0",
+    "process-nextick-args": "^1.0.7",
+    "sigmund": "^1.0.1",
     "slick-carousel": "^1.6.0",
     "smart-grid": "^1.1.0",
+    "util-deprecate": "^1.0.2",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
