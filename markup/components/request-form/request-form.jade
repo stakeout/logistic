@@ -16,22 +16,21 @@ mixin request-form(data)
 					label(for=email)
 						input(type='email' name='email' id='email' placeholder='Электронаня почта')
 						+svg('mail',24,22)
-					+e.FIELDSET.form-group
-						.wrap
-							span Выберите вид транспорта:
-							span.arrow
-							input(type='checkbox' name='auto' id='auto')
-							label(for='auto')
-								+svg('auto',24,24)
-							input(type='checkbox' name='train' id='train')
-							label(for='train')
-								+svg('train',22,22)
-							input(type='checkbox' name='plane' id='plane')
-							label(for='plane')
-								+svg('plane',24,24)
-							input(type='checkbox' name='ship' id='ship')
-							label(for='ship')
-								+svg('sea',24,24)
+					+e.form-transport
+						span Выберите вид транспорта:
+						span.arrow
+						input(type='checkbox' name='auto' id='auto')
+						label(for='auto')
+							+svg('auto',24,24)
+						input(type='checkbox' name='train' id='train')
+						label(for='train')
+							+svg('train',22,22)
+						input(type='checkbox' name='plane' id='plane')
+						label(for='plane')
+							+svg('plane',24,24)
+						input(type='checkbox' name='ship' id='ship')
+						label(for='ship')
+							+svg('sea',24,24)
 					label(for=weight)
 						input(type='text' name='weight' id='weight' placeholder='Вес груза')
 						+svg('weight',24,24)
