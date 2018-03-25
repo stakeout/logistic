@@ -20,6 +20,7 @@
 		flex-wrap wrap
 	&__col-right
 		display flex
+		position relative
 		width 360px
 		margin-left 30px
 		xxs(margin-left, 0)
@@ -70,7 +71,6 @@
 			transition: line-height 1s ease-in
 	input, textarea
 		width 100%
-		margin-bottom 30px
 		padding-top 13px
 		padding-right 13px
 		padding-left 55px
@@ -87,6 +87,8 @@
 	textarea
 		min-height 210px
 		overflow hidden
+	label:not([for="message"])
+		margin-bottom 30px
 	svg
 		position absolute
 		top 14px
