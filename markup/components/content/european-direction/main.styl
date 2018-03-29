@@ -1,6 +1,6 @@
 .direction-way
 	&_europe
-		background url(__static__content/europe/europe.png) no-repeat top left
+		background url(__static__content/europe/europa.png) no-repeat top left
 		background-size cover
 	&_asia
 		background url(__static__content/azian/asia.png) no-repeat top left
@@ -44,5 +44,14 @@
 		&:last-child
 			background-image url(__static__minified-svg/small-icon-4.svg)
 .logistic-services
-	// margin-top 90px
+	height 500px
 	background-image url(__static__content/services/bg-2.png)
+	&__inner
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		justify-content space-between
+		height 100%

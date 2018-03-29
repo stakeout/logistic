@@ -7,7 +7,7 @@ countries: {
         header: 
           {
             title: 'Западная Европа',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -43,8 +43,8 @@ countries: {
             flagImgSource: '__static__img/content/europe/western/ch.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Тщательная организация грузоперевозок',
+            flagImgSource: '__static__img/content/services/1/icon-1.svg'
           }
         ]
       },
@@ -52,7 +52,7 @@ countries: {
         header: 
           {
             title: 'Восточная Европа',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -88,8 +88,8 @@ countries: {
             flagImgSource: '__static__img/content/europe/eastern/cz.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Высокий уровень сервиса',
+            flagImgSource: '__static__img/content/services/2/icon-3.svg'
           }
         ]
       },
@@ -97,7 +97,7 @@ countries: {
         header: 
           {
             title: 'Северная Европа',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -125,8 +125,8 @@ countries: {
             flagImgSource: '__static__img/content/europe/northern/ee.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Наши сотрудники - профессионалы',
+            flagImgSource: '__static__img/content/services/9/icon-2.svg'
           }
         ]
       },
@@ -134,7 +134,7 @@ countries: {
         header: 
           {
             title: 'Южная Европа',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -166,8 +166,8 @@ countries: {
             flagImgSource: '__static__img/content/europe/southern/hr.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Агенты-партнеры во всем мире!',
+            flagImgSource: '__static__img/content/services/3/icon-2.svg'
           }
         ]
       }
@@ -177,7 +177,7 @@ countries: {
         header: 
           {
             title: 'Северная Америка',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -193,8 +193,8 @@ countries: {
             flagImgSource: '__static__img/content/america/northern/usa.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Доставляем "от двери до двери"',
+            flagImgSource: '__static__img/content/services/1/icon-4.svg'
           }
         ]
       },
@@ -202,7 +202,7 @@ countries: {
         header: 
           {
             title: 'Южная Америка',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -230,8 +230,8 @@ countries: {
             flagImgSource: '__static__img/content/america/southern/venezuela.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Консолидационные склады',
+            flagImgSource: '__static__img/content/services/8/icon-2.svg'
           }
         ]
       },
@@ -239,7 +239,7 @@ countries: {
         header: 
           {
             title: 'Центральная Америка',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -251,8 +251,8 @@ countries: {
             flagImgSource: '__static__img/content/america/central/panama.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Многолетний опыт',
+            flagImgSource: '__static__img/content/services/5/icon-3.svg'
           }
         ]
       }
@@ -262,7 +262,7 @@ countries: {
         header: 
           {
             title: 'Восточная Азия',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -282,8 +282,8 @@ countries: {
             flagImgSource: '__static__img/content/europe/eastern/pl.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Агенты-партнеры во всем мире!',
+            flagImgSource: '__static__img/content/services/3/icon-2.svg'
           }
         ]
       },
@@ -291,7 +291,7 @@ countries: {
         header: 
           {
             title: 'Западная Азия',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -331,8 +331,8 @@ countries: {
             flagImgSource: '__static__img/content/azian/western/uae.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Высокий уровень сервиса',
+            flagImgSource: '__static__img/content/services/2/icon-3.svg'
           }
         ]
       },
@@ -340,7 +340,7 @@ countries: {
         header: 
           {
             title: 'Центральная Азия',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -364,8 +364,8 @@ countries: {
             flagImgSource: '__static__img/content/azian/central/uzbekistan.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Наши сотрудники - профессионалы',
+            flagImgSource: '__static__img/content/services/9/icon-2.svg'
           }
         ]
       },
@@ -373,7 +373,7 @@ countries: {
         header: 
           {
             title: 'Юговосточная Азия',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -413,8 +413,8 @@ countries: {
             flagImgSource: '__static__img/content/azian/south-east/viethan.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Тщательная организация грузоперевозок',
+            flagImgSource: '__static__img/content/services/1/icon-1.svg'
           }
         ]
       },
@@ -422,7 +422,7 @@ countries: {
         header: 
           {
             title: 'Южная Азия',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -442,8 +442,8 @@ countries: {
             flagImgSource: '__static__img/content/azian/southern/sri-lanka.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Доставляем "от двери до двери"',
+            flagImgSource: '__static__img/content/services/1/icon-1.svg'
           }
         ]
       }
@@ -453,7 +453,7 @@ countries: {
         header: 
           {
             title: 'Дальневосточный федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -473,8 +473,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/far_eastern/yakutsk.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Мы - надежный партнер!',
+            flagImgSource: '__static__img/content/services/5/icon-2.svg'
           }
         ]
       },
@@ -482,7 +482,7 @@ countries: {
         header: 
           {
             title: 'Приволжский федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -574,8 +574,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/volga/yoshkar-ola.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Высокий уровень сервиса',
+            flagImgSource: '__static__img/content/services/2/icon-3.svg'
           }
         ]
       },
@@ -583,7 +583,7 @@ countries: {
         header: 
           {
             title: 'Северо-Западный федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -631,8 +631,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/north_west/vologda.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Наши сотрудники - профессионалы',
+            flagImgSource: '__static__img/content/services/9/icon-2.svg'
           }
         ]
       },
@@ -640,7 +640,7 @@ countries: {
         header: 
           {
             title: 'Сибирский федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -700,8 +700,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/siberian/prokopyevsk.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Тщательная организация грузоперевозок',
+            flagImgSource: '__static__img/content/services/1/icon-1.svg'
           }
         ]
       },
@@ -709,7 +709,7 @@ countries: {
         header: 
           {
             title: 'Уральский федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -745,8 +745,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/ural/surgut.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Консолидационные склады',
+            flagImgSource: '__static__img/content/services/8/icon-2.svg'
           }
         ]
       },
@@ -754,7 +754,7 @@ countries: {
         header: 
           {
             title: 'Центральный федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -826,8 +826,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/central/tambov.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Агенты-патнеры во всем мире!',
+            flagImgSource: '__static__img/content/services/3/icon-2.svg'
           }
         ]
       },
@@ -835,7 +835,7 @@ countries: {
         header: 
           {
             title: 'Южный федеральный округ',
-            text: 'Регулярные перевозки грузов'
+            text: 'Регулярные перевозки комплектных и сборных грузов'
           },
         list: [
           {
@@ -875,8 +875,8 @@ countries: {
             flagImgSource: '__static__img/content/russian/southern/shakhty.png'
           },
           {
-            name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-            flagImgSource: 'http://placehold.it/90x90'
+            name: 'Доставляем "от двери до двери"',
+            flagImgSource: '__static__img/content/services/1/icon-4.svg'
           }
         ]
       }
