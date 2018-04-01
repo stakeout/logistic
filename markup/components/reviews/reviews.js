@@ -1,14 +1,14 @@
 export const reviewsCarousel = () => {
-    if (window.matchMedia('(max-width: 414px)').matches) {
+    if (window.matchMedia('(max-width: 420px)').matches) {
         $('#reviews').slick({
+          dots: true,
+          arrows: false,
             responsive: [
                 {
                     breakpoint: 420,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
+                        slidesToScroll: 1
                     }
                 }
             ]
