@@ -18,12 +18,16 @@
 		width 360px
 		display flex
 		flex-wrap wrap
+		xxs(width, 100%)
 	&__col-right
 		display flex
 		position relative
 		width 360px
 		margin-left 30px
-		xxs(margin-left, 0)
+		xxs-block({
+			margin-left: 0
+			width: 100%
+		})
 	label
 		position relative
 		width 100%
@@ -87,6 +91,7 @@
 	textarea
 		min-height 210px
 		overflow hidden
+		xxs(margin-bottom, 15px)
 	label:not([for="message"])
 		margin-bottom 30px
 	svg
