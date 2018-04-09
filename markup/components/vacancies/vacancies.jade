@@ -113,9 +113,9 @@ mixin vacancies(data)
 					p Сложные и интересные задачи помогут вам стать лучшим в своем деле.
 		+e.modal-info#modal-info.hide
 			.wrapper
-			a(href='#').vacancies-btn.btn.btn_blue.btn_large Откликнуться
+			a(href='#').vacancies-btn.btn.btn_blue.btn_large#btnPosition Откликнуться
 			
-		+e.modal.hide
+		+e.modal.hide#modalPosition
 			form(action="/echo" method="post")
 				+e.col-left
 					label

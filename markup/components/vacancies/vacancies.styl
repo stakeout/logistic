@@ -55,7 +55,6 @@
 			padding: 30px
 			margin-bottom: 30px
 			flex-basis: 100%
-			
 		})
 		.hidden
 			display none
@@ -94,13 +93,17 @@
 	&__modal
 		position fixed
 		width 810px
-		height 440px
 		padding 30px
 		top 10%
-		left calc(50% - 405px)
+		left 50%
+		transform translateX(-50%)
 		background-color $c_white
 		border-radius 5px
 		z-index 1002
+		xxs-block({
+			width: 90%
+			padding: 10px
+		})
 		form
 			display flex
 			flex-wrap wrap
@@ -166,6 +169,7 @@
 			border none
 			border-radius 5px
 			resize none
+			xxs(margin-bottom, 15px)
 			&:hover
 				background-color: #f3f4fa
 				transition all .2s ease
@@ -180,6 +184,7 @@
 			position relative
 			padding 18px 0
 			padding-left 50px
+			xxs(margin-top, -15px)
 			svg
 				top 17px
 				left 0
@@ -188,14 +193,20 @@
 			margin-left auto
 			padding 18px 0
 			font-weight 700
+			xxs(width, 100%)
 	&__col-left
 		width 360px
 		display flex
 		flex-wrap wrap
+		xxs(width, 100%)
 	&__col-right
 		display flex
 		width 360px
 		margin-left 30px
+		xxs-block({
+			width: 100%
+			margin-left: 0
+		})
 	&__modal-info
 		position absolute
 		top 10%
