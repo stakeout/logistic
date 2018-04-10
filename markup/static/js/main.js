@@ -9,16 +9,21 @@ import {stickyNav, mobileNav} from '../../components/header/header';
 import {showForm} from '../../components/request-form/request-form';
 import {modalVacancies} from '../../components/vacancies/vacancies';
 import {modalOnlineServices} from '../../components/online-services/online-services';
+import * as iziModal from '../../components/iziModal/iziModal';
 $(() => {
     modalOnlineServices();
     modalVacancies();
     stickyNav();
     mobileNav();
-    showForm();
     slickCarouselSettins();
     reviewsMagnificPopup();
     reviewsCarousel();
     ourTeamCarousel();
+    $('#modal').iziModal({
+      fullscreen: false,
+      width: '1100px'
+    });
+    showForm();
     $('.office-life__list').slick({
         dots: false,
         centerMode: true,

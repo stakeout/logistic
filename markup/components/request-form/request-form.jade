@@ -1,5 +1,5 @@
 mixin request-form(data)
-	+b.request-form.hide
+	+b.request-form#modal(data-izimodal-title="Форма заказа")
 		+e.BUTTON.close-btn(aria-lable='close modal box') &times;
 		+e.FORM.form(action='#' method='post')
 			+e.inner
