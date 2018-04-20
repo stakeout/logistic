@@ -20,7 +20,6 @@ $(() => {
     reviewsCarousel();
     ourTeamCarousel();
     $('#modal').iziModal({
-      fullscreen: false,
       width: '1100px'
     });
     showForm();
