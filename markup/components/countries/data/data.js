@@ -381,7 +381,7 @@ countries: {
             flagImgSource: '__static__img/content/azian/south-east/cambodia.png'
           },
           {
-            name: 'Филипины',
+            name: 'Филиппины',
             flagImgSource: '__static__img/content/azian/south-east/filipin.png'
           },
           {

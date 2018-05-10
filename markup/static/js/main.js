@@ -9,8 +9,11 @@ import {stickyNav, mobileNav} from '../../components/header/header';
 import {showForm} from '../../components/request-form/request-form';
 import {modalVacancies} from '../../components/vacancies/vacancies';
 import {modalOnlineServices} from '../../components/online-services/online-services';
-import * as iziModal from '../../components/iziModal/iziModal';
+import {sweetAlertJs} from '../../components/contact-form/ajaxFormSend';
+// import * as iziModal from '../../components/iziModal/iziModal';
+
 $(() => {
+    sweetAlertJs();
     modalOnlineServices();
     modalVacancies();
     stickyNav();
@@ -19,9 +22,6 @@ $(() => {
     reviewsMagnificPopup();
     reviewsCarousel();
     ourTeamCarousel();
-    $('#modal').iziModal({
-      width: '1100px'
-    });
     showForm();
     $('.office-life__list').slick({
         dots: false,
@@ -30,16 +30,16 @@ $(() => {
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 420,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
-                    arrows: true,
-                    centerMode: false
-                }
+          {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true,
+                centerMode: false
             }
+          }
         ]
     });
     filterByType();
@@ -56,4 +56,7 @@ $(() => {
         }
 );
     wow.init();
+    // $('#modal').iziModal({
+    //   width: '1100px'
+    // });
 });

@@ -10,6 +10,34 @@ html(lang='ru' class='no-js')
 	+page
 		|%=symbols=%
 		block content
+		// Yandex.Metrika counter
+		script(type='text/javascript').
+			(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+			try {
+			w.yaCounter48300860 = new Ya.Metrika({
+			id:48300860,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+			});
+			} catch(e) { }
+			});
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/48300860', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
 		script(src='%=static=%js/separate-js/svg4everybody.min.js')
 		script svg4everybody();
 		
@@ -17,4 +45,5 @@ html(lang='ru' class='no-js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 		script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js")
+		<script src="%=static=%js/separate-js/sweetalert2.min.js"></script>
 		script(src='%=static=%js/main%=hash=%%=min=%.js')
