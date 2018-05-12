@@ -7,17 +7,18 @@ export const map = () => {
 
         function init() {
             myMap = new ymaps.Map('map', {
-                center: [53.88985341, 27.53529831],
+                center: [53.839787, 27.571299],
                 zoom: 16,
                 controls: []
             });
-            myPlacemark = new ymaps.Placemark([53.88985341, 27.53529831], {
+            myPlacemark = new ymaps.Placemark([53.839787, 27.571299
+], {
                 hintContent: 'ТВ Логистик'
             }, {
                 iconLayout: 'default#image',
                 iconImageHref: 'static/img/minified-svg/blue_map_marker.svg',
                 iconImageSize: [50, 42],
-                iconImageOffset: [-28, -20]
+                iconImageOffset: [-28, -50]
             });
             myMap.controls.add('zoomControl', {
                 size: 'small',

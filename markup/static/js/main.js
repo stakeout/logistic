@@ -10,7 +10,7 @@ import {showForm} from '../../components/request-form/request-form';
 import {modalVacancies} from '../../components/vacancies/vacancies';
 import {modalOnlineServices} from '../../components/online-services/online-services';
 import {sweetAlertJs} from '../../components/contact-form/ajaxFormSend';
-// import * as iziModal from '../../components/iziModal/iziModal';
+import * as iziModal from '../../components/iziModal/iziModal';
 
 $(() => {
     sweetAlertJs();
@@ -56,7 +56,7 @@ $(() => {
         }
 );
     wow.init();
-    // $('#modal').iziModal({
-    //   width: '1100px'
-    // });
+    $('#modal').iziModal({
+      width: '1100px'
+    });
 });

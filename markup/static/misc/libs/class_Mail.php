@@ -20,7 +20,7 @@ class Mail {
         self::$headers = "Content-type: text/html; charset=\"utf-8\"\r\n";
         self::$headers .= "From: ".self::$from."\r\n";
         self::$headers .= "MIME-Version: 1.0\r\n";
-        self::$headers .= "Date: ".date('D, d M Y h:i:s O')."\r\n";
+        self::$headers .= "Date: ".date('D, d M Y H:i:s O')."\r\n";
         self::$headers .= "Precedence: bulk\r\n";
 
         return mail(self::$to,self::$subject,self::$message,self::$headers);
