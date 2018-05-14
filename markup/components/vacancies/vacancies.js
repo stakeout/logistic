@@ -4,7 +4,6 @@ export const modalVacancies = () => {
     const vacancyBtn = document.querySelector('.vacancies-btn');
     const modalContent = document.querySelector('.wrapper');
     const modalInfo = document.querySelector('.vacancies__modal-info');
-    const popupForm = document.querySelector('.vacancies__modal');
 
     function modal(e) {
         e.preventDefault();
@@ -16,7 +15,7 @@ export const modalVacancies = () => {
     if (vacancyItem) {
         overlay.addEventListener('click', function () {
             modalInfo.classList.add('hide');
-            popupForm.classList.add('hide');
+            overlay.classList.add('hide');
         });
         for (let i = 0; i < vacancyItem.length; i++) {
             vacancyItem[i].addEventListener('click', modal);
@@ -24,9 +23,8 @@ export const modalVacancies = () => {
     }
     if (vacancyBtn) {
         vacancyBtn.addEventListener('click', function (e) {
-            e.preventDefault();
             modalInfo.classList.toggle('hide');
-            popupForm.classList.toggle('hide');
+            overlay.classList.add('hide');
         });
     }
 
