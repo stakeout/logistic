@@ -25,11 +25,14 @@
 		opacity 1
 		transform scale(1)
 	&__inner
+		position: relative;
+		padding-right: 25px;
 		xxs-block({
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-between
 			margin-bottom: auto
+			padding-right: 0
 		})
 	&__item
 		position relative
@@ -77,6 +80,18 @@
 			left 0
 			right auto
 			width 100%
+	&__lang
+		position: absolute;
+		right: 0;
+		top: 6px;
+		font-size: 0;
+		xxs-block({
+			top: -70px
+			left: 0
+		})
+		img
+			width: 25px;
+			xxs(width, 50px)
 	&__contacts
 		display none
 		xxs-block({
