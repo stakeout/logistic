@@ -1,6 +1,6 @@
 include ../language/language
 mixin main-navigation(data)
-	+b.NAV.navigation
+	+b.NAV.navigation_rus
 		+e.inner
 			+e.A.item(href='index.html') Главная
 			+e.A.item(href='direction.html') Направления
@@ -9,12 +9,10 @@ mixin main-navigation(data)
 			+e.A.item(href='vacancies.html') Вакансии
 			+e.A.item(href='online-services.html') Онлайн-сервисы
 			+e.A.item(href='contacts.html') Контакты
-			+e.A.lang(href='en.index.html') English
-				img(src='__static__img/minified-svg/flag-uk.svg')
 		+e.contacts
 			+e.A.phone.btn(href='tel:+375172183326') Телефон
 				+svg('menu-phone-white',25,25)
 			+e.A.mail._mail.btn(href='mailto:info@tvlogistic.by') Email
 				+svg('menu-mail-white',25,25)
-		//- +language
+		+language
 		
