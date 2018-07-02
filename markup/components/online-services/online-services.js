@@ -17,6 +17,7 @@ export const modalOnlineServices = () => {
         }
         overlay.addEventListener('click', function () {
             info.classList.add('hide');
+            this.classList.add('hide');
         });
     }
 };

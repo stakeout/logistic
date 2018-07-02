@@ -2,16 +2,31 @@ mixin online-services(data)
 	+b.online-services
 		+e.inner.center
 			+e.H2.title Онлайн-сервисы
-			//- +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			+e.UL.list
 				+e.LI.item.style
 					+svg('online-service1',90,60)
 					span Расстояние между городами
 					.hidden
-						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						script.
-							var _avtdq = [["language", "ru"], ["width", '100%']];
-						script(src='https://www.avtodispetcher.ru/distance/export/frame.js')
+						form#flagma-distance-form(action='https://flagma.ru/raschet-rasstoyaniy.html', method='get', target='_blank')
+							div
+								input(type='hidden', name='r', value='distance/getdistance')
+							table(cellspacing='0', cellpadding='4')
+								tr
+									td(colspan='2') Расчет расстояний
+								tr
+									td Откуда
+									td
+										input(type='text', size='20', name='from_terr')
+								tr
+									td Куда
+									td
+										input(type='text', size='20', name='to_terr')
+								tr
+									td(colspan='2', align='center')
+										input(type='submit', value='Рассчитать')
+										| (на 
+										a(href='http://flagma.ru') Flagma.ru
+										| )
 				+e.LI.item.style
 					+svg('online-service2',90,60)
 					span Движение и позиции судов
@@ -31,10 +46,174 @@ mixin online-services(data)
 					+svg('online-service4',90,60)
 					span Поиск и отслеживание контенейров
 					.hidden
-						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						script.
-							var _avtdq = [["language", "ru"], ["width", '100%']];
-						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+						table
+							tbody
+								tr
+									td
+										img(src='/files/images/ico_alianca.png', alt='')
+									td
+										a(title='Alianca tracking', href='http://www.alianca.com.br/ecommerce-al/trackntrace/?lang=en', target='_blank') Alianca
+									td Alianca Navegacao e Logística
+								tr
+									td
+										img(src='/files/images/ico_anl.png', alt='')
+									td
+										a(title='ANL tracking', href='http://ebusiness.cma-cgm.com/ANL/Tracking/Default.aspx', target='_blank') ANL
+									td Australian National Line
+								tr
+									td
+										img(src='/files/images/ico_apl.png', alt='')
+									td
+										a(title='APL tracking', href='http://apl.com/tracking/', target='_blank') APL
+									td American President Lines
+								tr
+									td
+										img(src='/files/images/ico_cma-cgm.png', alt='')
+									td
+										a(title='CMA CGM tracking', href='http://www.cma-cgm.com/eBusiness/Tracking/Default.aspx', target='_blank') CMA CGM
+									td
+										| CMA-CGM Container Lines 
+										br
+								tr
+									td
+										img(src='/files/images/ico_cosco.png', alt='')
+									td
+										a(title='COSCO tracking', href='http://ebusiness.coscon.com/NewEBWeb/public/cargoTracking/cargoTracking.xhtml', target='_blank') COSCO
+									td COSCO Container Lines
+								tr
+									td
+										img(src='/files/images/ico_csav.png', alt='')
+									td
+										a(title='CSAV tracking', href='http://www2.csav.com/rastreo/rastreo.nsf/YourTrace?OpenForm', target='_blank') CSAV
+									td Compania Sud Americana de Vapores
+								tr
+									td
+										img(src='/files/images/ico_evergreen.png', alt='')
+									td
+										a(title='Evergreen tracking', href='http://www.shipmentlink.com/servlet/TDB1_CargoTracking.do', target='_blank') Evergreen
+									td Evergreen Marine Corporation
+								tr
+									td
+										img(src='/files/images/ico_fesco.png', alt='')
+									td
+										a(title='FESCO tracking', href='http://www.fesco.ru/tracking/', target='_blank') FESCO
+									td FESCO Shipping Company
+								tr
+									td
+										img(src='/files/images/ico_hamburgsud.png', alt='')
+									td
+										a(title='Hamburg Sud tracking', href='https://ecom.hamburgsud.com/ecom/en/ecommerce_portal/track_trace/track__trace/ep_trackandtrace.xhtml?lang=EN', target='_blank') Hamburg Sud
+									td Hamburg South America Line
+								tr
+									td
+										img(src='/files/images/ico_hapag-lloyd.png', alt='')
+									td
+										a(title='Hapag LLoyd tracking', href='http://www.hapag-lloyd.com/en/home.html', target='_blank') Hapag LLoyd
+									td Hapag-Lloyd Container Lines
+								tr
+									td
+										img(src='/files/images/ico_hmm.png', alt='')
+									td
+										a(title='HMM tracking', href='http://www.hmm21.com/cms/business/ebiz/trackTrace/trackTrace/index.jsp', target='_blank') HMM
+									td Hyundai Merchant Marine
+								tr
+									td
+										img(src='/files/images/ico_italiamarittima.png', alt='')
+									td
+										a(title='Italia Marittima tracking', href='http://www.shipmentlink.com/servlet/TDB1_CargoTracking.do', target='_blank') Italia Marittima
+									td Italia Marittima S.p.A.
+								tr
+									td
+										img(src='/files/images/ico_klineurope.png', alt='')
+									td
+										a(title='K Line tracking', href='http://ecom.kline.com/tracking', target='_blank') K Line
+									td Kawasaki Kisen Kaisha
+								tr
+									td
+										img(src='/files/images/ico_macs.png', alt='')
+									td
+										a(title='MACS tracking', href='http://www.macship.com/E-BUSINESS/TrackingAndTracing.aspx', target='_blank') MACS
+									td Maritime Carrier Shipping
+								tr
+									td
+										img(src='/files/images/ico_maerskline.png', alt='')
+									td
+										a(title='MAERSK tracking', href='http://www.maerskline.com/appmanager/maerskline/public?_nfpb=true&_nfls=false&_pageLabel=page_tracking3_trackSimple', target='_blank') MAERSK
+									td Maersk Line
+								tr
+									td
+										img(src='/files/images/ico_molpower.png', alt='')
+									td
+										a(title='MOL tracking', href='http://www.molpower.com/htm/default.htm', target='_blank') MOL
+									td Mitsui O.S.K. Lines
+								tr
+									td
+										img(src='/files/images/ico_mscgva.png', alt='')
+									td
+										a(title='MSC tracking', href='http://www.mscgva.ch/tracking/index.html', target='_blank') MSC
+									td Mediterranean Shipping Company S.A.
+								tr
+									td
+										img(src='/files/images/ico_nykline.png', alt='')
+									td
+										a(title='NYK tracking', href='http://www2.nykline.com/ct/searchForm.nyk', target='_blank') NYK
+									td Nippon Yusen Kabushiki Kaisha
+								tr
+									td
+										img(src='/files/images/ico_oocl.png', alt='')
+									td
+										a(title='OOCL tracking', href='http://moc.oocl.com/party/cargotracking/mobile/mobile_ct_search.jsf?ANONYMOUS_BEHAVIOR=BUILD_UP&ENTRY_TYPE=OOCL&ENTRY=MCC', target='_blank') OOCL
+									td Orient Overseas Container Line
+								tr
+									td
+										img(src='/files/images/ico_pil.png', alt='')
+									td
+										a(title='PIL tracking', href='https://www.pilship.com/en-our-track-and-trace-pil-pacific-international-lines/120.html', target='_blank') PIL
+									td Pacific International Lines
+								tr
+									td
+										img(src='/files/images/ico_safmarine.png', alt='')
+									td
+										a(title='Safmarine tracking', href='https://www.safmarine.com/how-to-ship/tracking#', target='_blank') Safmarine
+									td Safmarine Container Lines
+								tr
+									td
+										img(src='/files/images/ico_samskip.png', alt='')
+									td
+										a(title='SAMSKIP tracking', href='http://194.151.164.193/', target='_blank') SAMSKIP
+									td SAMSKIP Multimodal Container Logistics
+								tr
+									td
+										img(src='/files/images/ico_shipindia.png', alt='')
+									td
+										a(title='SCI tracking', href='http://www.shipindia.com/app/consignment-tracking.aspx', target='_blank') SCI
+									td The Shipping Corporation of India
+								tr
+									td
+										img(src='/files/images/ico_seagoline.png', alt='')
+									td
+										a(title='Seago tracking', href='https://seagoline.com//tracking/', target='_blank') Seago
+									td Seago Line
+								tr
+									td
+										img(src='/files/images/ico_yml.png', alt='')
+									td
+										a(title='YML tracking', href='http://www.yml.com.tw/e-service/Track_Trace/track_trace_cargo_tracking.aspx', target='_blank') YML
+									td Yang Ming Marine Transport Corporation
+								tr
+									td
+										img(src='/files/images/ico_zim.png', alt='')
+									td
+										a(title='ZIM tracking', href='http://www.zim.co.il/Tracing.aspx?id=166&l=4', target='_blank') ZIM
+									td Zim Integrated Shipping Services
+								tr
+									td
+										a(title='tnspb.ru', href='http://www.tnspb.ru', target='_blank')
+
+						//- a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
+						//- script.
+						//- 	var _avtdq = [["language", "ru"], ["width", '100%']];
+						//- script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
 				+e.LI.item.style
 					+svg('online-service5',90,60)
 					span Отслеживание воздушных судов

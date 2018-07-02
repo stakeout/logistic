@@ -71,10 +71,11 @@
 			})
 	&__modal
 		position absolute
-		top 10%
-		left calc(50% - 375px)
+		top 50%
+		left 50%
 		width 750px
 		padding 30px
+		transform translate(-50%, -50%)
 		background-color $c_white
 		z-index 1002
 		border-radius 5px
@@ -84,3 +85,27 @@
 			top calc(50% - 25%)
 			padding 20px
 		})
+#flagma-distance-form
+	width 285px
+	margin 0 auto
+	margin-top 20px
+	table
+		width 100%
+	input:not([type="submit"])
+		font-family: Arial, Helvetica, sans-serif
+		font-size: 1rem
+		padding: 1px 0 2px 1px
+		border 2px solid #e5e5e5
+	tr
+		display block
+		margin-bottom 20px
+		width 100%
+		&:nth-child(2),
+		&:nth-child(3)
+			display flex
+			justify-content space-between
+	input[type="submit"]
+		display inline-block
+		vertical-align top
+		padding 10px
+		
