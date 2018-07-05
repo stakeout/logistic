@@ -35,14 +35,6 @@ mixin online-services(data)
 							width='100%';
 						script(type='text/javascript', src='//www.marinetraffic.com/js/embed.js')
 				+e.LI.item.style
-					+svg('online-service3',90,60)
-					span Расчет загрузки транспортного средства
-					.hidden
-						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						script.
-							var _avtdq = [["language", "ru"], ["width", '100%']];
-						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
-				+e.LI.item.style
 					+svg('online-service4',90,60)
 					span Поиск и отслеживание контенейров
 					.hidden
@@ -209,18 +201,10 @@ mixin online-services(data)
 								tr
 									td
 										a(title='tnspb.ru', href='http://www.tnspb.ru', target='_blank')
-
-						//- a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						//- script.
-						//- 	var _avtdq = [["language", "ru"], ["width", '100%']];
-						//- script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
 				+e.LI.item.style
 					+svg('online-service5',90,60)
 					span Отслеживание воздушных судов
 					.hidden
-						a#avtd-embed-link(href='https://www.avtodispetcher.ru/distance/') www.avtodispetcher.ru
-						script.
-							var _avtdq = [["language", "ru"], ["width", '100%']];
-						script(src='https://www.avtodispetcher.ru/distance/export/frame.js', async='async')
+						iframe#blockrandom.wrapperSUN_198(src='http://www.flightradar24.com/simple_index.php?lat=47.37&amp;lon=20.96&amp;z=5', name=' ', width='100%', height='590', frameborder='0', scrolling='no', align='top')    Нет встроенных фреймов
 		+e.modal.hide
 			.wrap
